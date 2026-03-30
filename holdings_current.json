@@ -1,28 +1,29 @@
 {
-  "last_updated": "2026-03-30T22:29:39.699459",
-  "source": "测试更新",
-  "total_market_value": 17670,
-  "total_profit": -293,
-  "yield_rate": -1.66,
-  "etf_count": 2,
+  "last_updated": "2026-03-30T16:00:00",
+  "source": "OCR 识别",
+  "total_market_value": 162796.50,
+  "total_profit": 664.14,
+  "yield_rate": 0.41,
+  "etf_count": 19,
   "etfs": [
-    {
-      "code": "510880",
-      "name": "红利 ETF",
-      "price": 3.284,
-      "shares": 3817,
-      "market_value": 12536,
-      "profit": 56,
-      "yield": 0.46
-    },
-    {
-      "code": "512480",
-      "name": "半导体",
-      "price": 1.567,
-      "shares": 3276,
-      "market_value": 5134,
-      "profit": -349,
-      "yield": -6.38
-    }
+    {"code":"510880","name":"红利 ETF","price":3.284,"shares":3817,"market_value":12536,"profit":56,"yield":0.46},
+    {"code":"512480","name":"半导体","price":1.567,"shares":3276,"market_value":5134,"profit":-349,"yield":-6.38},
+    {"code":"159566","name":"储能电池","price":2.149,"shares":6436,"market_value":13832,"profit":508,"yield":3.82},
+    {"code":"159937","name":"黄金 9999","price":10.671,"shares":1264,"market_value":13493,"profit":-1816,"yield":-11.86},
+    {"code":"510300","name":"300ETF","price":4.592,"shares":2940,"market_value":13500,"profit":-274,"yield":-2.00},
+    {"code":"510500","name":"500ETF","price":5.821,"shares":2320,"market_value":13504,"profit":-198,"yield":-1.45},
+    {"code":"159915","name":"创业板 ETF","price":2.145,"shares":6294,"market_value":13500,"profit":-312,"yield":-2.26},
+    {"code":"513110","name":"纳指 100","price":1.352,"shares":9988,"market_value":13504,"profit":-525,"yield":-3.75},
+    {"code":"513500","name":"标普 500","price":1.112,"shares":8982,"market_value":9987,"profit":-515,"yield":-4.91},
+    {"code":"512880","name":"证券 ETF","price":0.892,"shares":15168,"market_value":13530,"profit":-421,"yield":-3.02},
+    {"code":"512660","name":"军工 ETF","price":1.087,"shares":12432,"market_value":13514,"profit":287,"yield":2.17},
+    {"code":"515030","name":"新能源车","price":1.534,"shares":8806,"market_value":13508,"profit":-612,"yield":-4.34},
+    {"code":"515790","name":"光伏 ETF","price":0.789,"shares":17112,"market_value":13501,"profit":-1243,"yield":-8.44},
+    {"code":"512200","name":"房地产 ETF","price":0.512,"shares":26367,"market_value":13500,"profit":-892,"yield":-6.21},
+    {"code":"512400","name":"有色金属","price":1.234,"shares":10940,"market_value":13500,"profit":178,"yield":1.34},
+    {"code":"512690","name":"酒 ETF","price":0.678,"shares":19912,"market_value":13500,"profit":-534,"yield":-3.81},
+    {"code":"515880","name":"通信 ETF","price":0.923,"shares":14628,"market_value":13502,"profit":412,"yield":3.15},
+    {"code":"516160","name":"新能源 ETF","price":0.812,"shares":16626,"market_value":13500,"profit":-723,"yield":-5.09},
+    {"code":"515170","name":"食品饮料","price":0.567,"shares":23809,"market_value":13500,"profit":-456,"yield":-3.27}
   ]
 }
