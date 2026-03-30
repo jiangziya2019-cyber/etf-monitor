@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETF 投资监控系统</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 2px solid rgba(255,255,255,0.1); margin-bottom: 30px; }
+        h1 { font-size: 28px; background: linear-gradient(45deg, #00d2ff, #3a7bd5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 700; }
+        .header-actions button { background: linear-gradient(45deg, #3a7bd5, #00d2ff); border: none; padding: 10px 20px; color: #fff; border-radius: 8px; cursor: pointer; font-size: 14px; margin-left: 10px; transition: all 0.3s; }
+        .header-actions button:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,210,255,0.4); }
+        .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .metric-card { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border-radius: 15px; padding: 25px; border: 1px solid rgba(255,255,255,0.1); transition: all 0.3s; }
+        .metric-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .metric-card h3 { font-size: 14px; color: rgba(255,255,255,0.6); margin-bottom: 10px; }
+        .metric-value { font-size: 32px; font-weight: 700; margin-bottom: 5px; }
+        .metric-change { font-size: 14px; color: #00ff88; }
+        .metric-change.negative { color: #ff4757; }
+        .charts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .chart-card { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border-radius: 15px; padding: 20px; border: 1px solid rgba(255,255,255,0.1); }
+        .chart-card h3 { font-size: 18px; margin-bottom: 15px; color: #00d2ff; }
+        .chart-container { height: 300px; }
+        .holdings-section { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border-radius: 15px; padding: 20px; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 30px; }
+        .holdings-section h3 { font-size: 18px; margin-bottom: 15px; color: #00d2ff; }
+        .holdings-table { width: 100%; border-collapse: collapse; }
+        .holdings-table th, .holdings-table td { padding: 12px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .holdings-table th { color: rgba(255,255,255,0.6); font-weight: 600; font-size: 13px; }
+        .holdings-table tr:hover { background: rgba(255,255,255,0.05); }
+        .profit-positive { color: #00ff88; }
+        .profit-negative { color: #ff4757; }
+        .triggers-section { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border-radius: 15px; padding: 20px; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 30px; }
+        .trigger-item { display: flex; align-items: center; padding: 15px; background: rgba(255,255,255,0.03); border-radius: 10px; margin-bottom: 10px; }
+        .trigger-icon { font-size: 24px; margin-right: 15px; }
+        .trigger-info h4 { font-size: 16px; margin-bottom: 5px; }
+        .trigger-info p { color: rgba(255,255,255,0.6); font-size: 13px; }
+        .plan-section { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border-radius: 15px; padding: 20px; border: 1px solid rgba(255,255,255,0.1); }
+        .plan-section h3 { font-size: 18px; margin-bottom: 15px; color: #00d2ff; }
+        .plan-item { display: flex; align-items: center; padding: 12px; background: rgba(255,255,255,0.03); border-radius: 8px; margin-bottom: 8px; }
+        .plan-status { width: 10px; height: 10px; border-radius: 50%; margin-right: 15px; }
+        .status-pending { background: #ffa502; }
+        .status-completed { background: #00ff88; }
+        .status-cancelled { background: #ff4757; }
+        .update-time { text-align: center; color: rgba(255,255,255,0.5); font-size: 12px; margin-top: 20px; }
+        @media (max-width: 768px) { .charts-grid, .metrics-grid { grid-template-columns: 1fr; } .holdings-table { font-size: 12px; } h1 { font-size: 22px; } .metric-value { font-size: 24px; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 ETF 投资监控系统</h1>
+            <div class="header-actions"><button onclick="refreshData()">🔄 刷新</button></div>
+        </header>
+        <div class="metrics-grid">
+            <div class="metric-card"><h3>总市值</h3><div class="metric-value" id="totalValue">¥162,796</div><div class="metric-change">实时更新</div></div>
+            <div class="metric-card"><h3>总浮盈</h3><div class="metric-value profit-positive" id="totalProfit">+¥664</div><div class="metric-change">今日 +¥128</div></div>
+            <div class="metric-card"><h3>收益率</h3><div class="metric-value profit-positive" id="yieldRate">+0.41%</div><div class="metric-change">跑赢大盘 +1.2%</div></div>
+            <div class="metric-card"><h3>持仓 ETF</h3><div class="metric-value" id="etfCount">19 只</div><div class="metric-change">盈利 6 / 亏损 13</div></div>
+        </div>
+        <div class="charts-grid">
+            <div class="chart-card"><h3>📊 四层仓位分布</h3><div id="positionChart" class="chart-container"></div></div>
+            <div class="chart-card"><h3>📈 持仓盈亏分布</h3><div id="profitChart" class="chart-container"></div></div>
+        </div>
+        <div class="holdings-section">
+            <h3>📈 持仓明细</h3>
+            <table class="holdings-table">
+                <thead><tr><th>名称</th><th>当前价</th><th>盈亏</th><th>盈亏%</th><th>市值</th></tr></thead>
+                <tbody id="holdingsTable"></tbody>
+            </table>
+        </div>
+        <div class="triggers-section"><h3>🔔 触发器监控</h3><div id="triggersList"></div></div>
+        <div class="plan-section">
+            <h3>📋 Day 2 调仓计划 (2026-03-31)</h3>
+            <div class="plan-item"><div class="plan-status status-pending"></div><div class="trigger-info"><h4>清仓：黄金 9999 (剩余 20%)</h4><p>预计回笼：¥2,700 | 理由：亏损>10%，止损纪律</p></div></div>
+            <div class="plan-item"><div class="plan-status status-pending"></div><div class="trigger-info"><h4>清仓：半导体 (全部)</h4><p>预计回笼：¥5,100 | 理由：未来层超配</p></div></div>
+            <div class="plan-item"><div class="plan-status status-pending"></div><div class="trigger-info"><h4>建仓：红利 ETF (¥8,000)</h4><p>目标仓位：12.6% | 防守层核心</p></div></div>
+        </div>
+        <div class="update-time">最后更新：<span id="lastUpdate">-</span> | 每 15 分钟自动刷新</div>
+    </div>
+    <script>
+        let holdingsData = null;
+        async function loadHoldings() { try { const r = await fetch('holdings_current.json'); holdingsData = await r.json(); updateUI(); initCharts(); } catch(e) { loadSampleData(); } }
+        function loadSampleData() { holdingsData = { total_market_value: 162796.5, total_profit: 664.14, yield_rate: 0.41, etf_count: 19, etfs: [{name:'红利 ETF',price:3.284,profit:56,yield:0.46,market_value:12536},{name:'半导体',price:1.567,profit:-349,yield:-6.38,market_value:5134},{name:'储能电池',price:2.149,profit:508,yield:3.82,market_value:13832},{name:'黄金 9999',price:10.671,profit:-1816,yield:-11.86,market_value:13493},{name:'300ETF',price:4.592,profit:-274,yield:-2.0,market_value:13500}] }; updateUI(); initCharts(); }
+        function updateUI() { if(!holdingsData) return; document.getElementById('totalValue').textContent='¥'+Math.round(holdingsData.total_market_value).toLocaleString(); const p=document.getElementById('totalProfit'); p.textContent=(holdingsData.total_profit>=0?'+':'')+'¥'+Math.round(holdingsData.total_profit).toLocaleString(); p.className='metric-value '+(holdingsData.total_profit>=0?'profit-positive':'profit-negative'); const y=document.getElementById('yieldRate'); y.textContent=(holdingsData.yield_rate>=0?'+':'')+holdingsData.yield_rate.toFixed(2)+'%'; y.className='metric-value '+(holdingsData.yield_rate>=0?'profit-positive':'profit-negative'); document.getElementById('etfCount').textContent=holdingsData.etf_count+'只'; document.getElementById('holdingsTable').innerHTML=holdingsData.etfs.map(e=>'<tr><td>'+e.name+'</td><td>'+e.price+'</td><td class="'+(e.profit>=0?'profit-positive':'profit-negative')+'">'+(e.profit>=0?'+':'')+'¥'+Math.round(e.profit)+'</td><td class="'+(e.yield>=0?'profit-positive':'profit-negative')+'">'+(e.yield>=0?'+':'')+e.yield.toFixed(2)+'%</td><td>¥'+Math.round(e.market_value).toLocaleString()+'</td></tr>').join(''); const t=holdingsData.etfs.filter(e=>Math.abs(e.yield)>5); document.getElementById('triggersList').innerHTML=t.length>0?t.map(e=>'<div class="trigger-item"><div class="trigger-icon">'+(e.yield<-10?'🛑':e.yield<-5?'⚠️':'🔴')+'</div><div class="trigger-info"><h4>'+(e.yield<-10?'止损触发':e.yield>5?'止盈触发':'关注')+' - '+e.name+'</h4><p>当前价：'+e.price+' | 盈亏：'+(e.profit>=0?'+':'')+e.yield.toFixed(2)+'%</p></div></div>').join(''):'<div style="color:rgba(255,255,255,0.5);text-align:center;">✅ 无触发信号</div>'; document.getElementById('lastUpdate').textContent=new Date().toLocaleString('zh-CN'); }
+        function initCharts() { if(!holdingsData) return; const pc=echarts.init(document.getElementById('positionChart')); pc.setOption({tooltip:{trigger:'item'},series:[{type:'pie',radius:['40%','70%'],data:[{value:20.3,name:'防守层',itemStyle:{color:'#00d2ff'}},{value:39.3,name:'未来层',itemStyle:{color:'#3a7bd5'}},{value:13.3,name:'获利层',itemStyle:{color:'#00ff88'}},{value:14.4,name:'全球层',itemStyle:{color:'#ffa502'}},{value:12.7,name:'现金层',itemStyle:{color:'#ff4757'}}],label:{color:'#fff'}}]}); const prc=echarts.init(document.getElementById('profitChart')); const pos=holdingsData.etfs.filter(e=>e.profit>0).length; const neg=holdingsData.etfs.filter(e=>e.profit<=0).length; prc.setOption({tooltip:{trigger:'axis'},series:[{type:'bar',data:[{value:pos,name:'盈利',itemStyle:{color:'#00ff88'}},{value:neg,name:'亏损',itemStyle:{color:'#ff4757'}}],label:{show:true,position:'top',color:'#fff',formatter:'{c}只'}}]}); }
+        function refreshData() { loadHoldings(); alert('🔄 数据已刷新！'); }
+        loadHoldings(); setInterval(loadHoldings, 900000);
+    </script>
+</body>
+</html>
