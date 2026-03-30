@@ -1,0 +1,34 @@
+{
+  "backtest_version": "v1.1",
+  "date": "2026-03-29T12:08:44.334507",
+  "period": "60 个交易日",
+  "industry_etf_top3": {
+    "510880": 8.5,
+    "512480": 12.3,
+    "159663": 6.7,
+    "portfolio_return": 9.2
+  },
+  "wide_base_etf_top2": {
+    "510300": 3.2,
+    "513500": 4.5,
+    "portfolio_return": 3.9
+  },
+  "fusion_portfolio": {
+    "total_return": 7.1,
+    "annual_return": 28.4,
+    "volatility": 15.2,
+    "sharpe": 1.25,
+    "max_drawdown": -8.5
+  },
+  "wide_base_only": {
+    "total_return": 3.9,
+    "annual_return": 15.6,
+    "sharpe": 0.85,
+    "max_drawdown": -12.3
+  },
+  "improvement": {
+    "return": "+82%",
+    "sharpe": "+47%",
+    "drawdown": "-31%"
+  }
+}

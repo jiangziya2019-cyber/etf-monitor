@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-03-28T10:32:18.951167",
+  "stage": 7,
+  "etf_pool_size": 100,
+  "expanded": {
+    "train_arr": 3.96,
+    "test_arr": 24.52
+  },
+  "core": {
+    "train_arr": 2.39,
+    "test_arr": 18.72
+  }
+}

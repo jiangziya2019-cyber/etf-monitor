@@ -1,0 +1,117 @@
+{
+  "timestamp": "2026-03-28T10:16:07.457745",
+  "stage": 4,
+  "volatility_optimization": [
+    {
+      "arr": 8.22,
+      "mdd": 15.35,
+      "sharpe": 4.56,
+      "total_return": 63.62,
+      "stop_loss_count": 13,
+      "take_profit_count": 17,
+      "trade_count": 7,
+      "volatility_threshold": 15,
+      "volume_filter": 0
+    },
+    {
+      "arr": 8.22,
+      "mdd": 15.35,
+      "sharpe": 4.56,
+      "total_return": 63.62,
+      "stop_loss_count": 13,
+      "take_profit_count": 17,
+      "trade_count": 7,
+      "volatility_threshold": 15,
+      "volume_filter": 5000000.0
+    },
+    {
+      "arr": 8.04,
+      "mdd": 15.35,
+      "sharpe": 4.52,
+      "total_return": 61.94,
+      "stop_loss_count": 11,
+      "take_profit_count": 16,
+      "trade_count": 7,
+      "volatility_threshold": 15,
+      "volume_filter": 20000000.0
+    },
+    {
+      "arr": 7.41,
+      "mdd": 15.35,
+      "sharpe": 3.94,
+      "total_return": 56.17,
+      "stop_loss_count": 14,
+      "take_profit_count": 19,
+      "trade_count": 7,
+      "volatility_threshold": 18,
+      "volume_filter": 0
+    },
+    {
+      "arr": 7.41,
+      "mdd": 15.35,
+      "sharpe": 3.94,
+      "total_return": 56.17,
+      "stop_loss_count": 14,
+      "take_profit_count": 19,
+      "trade_count": 7,
+      "volatility_threshold": 18,
+      "volume_filter": 5000000.0
+    }
+  ],
+  "pb_strategy": [
+    {
+      "arr": 0.0,
+      "mdd": 0,
+      "sharpe": 0,
+      "total_return": 0.0,
+      "stop_loss_count": 0,
+      "take_profit_count": 0,
+      "trade_count": 0,
+      "pb_threshold": 30
+    },
+    {
+      "arr": 0.0,
+      "mdd": 0,
+      "sharpe": 0,
+      "total_return": 0.0,
+      "stop_loss_count": 0,
+      "take_profit_count": 0,
+      "trade_count": 0,
+      "pb_threshold": 40
+    },
+    {
+      "arr": 0.0,
+      "mdd": 0,
+      "sharpe": 0,
+      "total_return": 0.0,
+      "stop_loss_count": 0,
+      "take_profit_count": 0,
+      "trade_count": 0,
+      "pb_threshold": 50
+    }
+  ],
+  "out_of_sample_test": {
+    "train": {
+      "arr": 7.22,
+      "mdd": 15.35,
+      "sharpe": 3.99,
+      "total_return": 41.68,
+      "stop_loss_count": 11,
+      "take_profit_count": 9,
+      "trade_count": 7,
+      "volatility_threshold": 15,
+      "volume_filter": 0
+    },
+    "test": {
+      "arr": -3.48,
+      "mdd": 15.62,
+      "sharpe": -0.49,
+      "total_return": -4.27,
+      "stop_loss_count": 7,
+      "take_profit_count": 4,
+      "trade_count": 10
+    },
+    "arr_difference": 10.7,
+    "stability": "⚠️ 不稳定（差异>5%），可能过拟合"
+  }
+}

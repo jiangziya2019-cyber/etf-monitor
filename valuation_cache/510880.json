@@ -1,0 +1,13 @@
+{
+  "etf_code": "510880",
+  "index_name": "\u4e0a\u8bc1\u7ea2\u5229",
+  "pe": null,
+  "pe_percentile": 60.0,
+  "pb": null,
+  "pb_percentile": 54.0,
+  "dividend_yield": 5.2,
+  "trade_date": "20260328",
+  "update_time": "2026-03-28T13:45:56.420924",
+  "data_source": "sector_median_estimate",
+  "cache_hit": false
+}

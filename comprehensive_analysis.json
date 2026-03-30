@@ -1,0 +1,299 @@
+{
+  "timestamp": "2026-03-27T12:45:18.335131",
+  "market_regime": "bear",
+  "total_etfs": 10,
+  "sector_distribution": {
+    "商品": 13.32,
+    "科技": 13.170000000000002,
+    "美股": 6.02,
+    "宽基": 12.030000000000001,
+    "制造": 3.2,
+    "新能源": 8.22
+  },
+  "holdings": [
+    {
+      "code": "160723",
+      "name": "嘉实原油",
+      "sector": "商品",
+      "price": 2.841,
+      "cost": 1.084,
+      "weight": 3.86,
+      "profit_pct": 162.08487084870848,
+      "change_pct": 2.415284787310749,
+      "volume": 9745406.71,
+      "pe_ttm": null,
+      "pb_mrq": null,
+      "pe_percentile": null,
+      "pb_percentile": 50,
+      "return_1d": 2.415284787310749,
+      "return_20d": 12.076423936553745,
+      "return_60d": 24.15284787310749,
+      "volatility": 0.03915284787310749,
+      "score": 85,
+      "score_details": {
+        "估值": 15,
+        "动量": 25,
+        "盈利": 25,
+        "仓位": 20
+      }
+    },
+    {
+      "code": "513500",
+      "name": "标普 500",
+      "sector": "美股",
+      "price": 2.219,
+      "cost": 2.283,
+      "weight": 6.02,
+      "profit_pct": -2.803328953131847,
+      "change_pct": 0.27112516945322107,
+      "volume": 921780.29,
+      "pe_ttm": 25.0,
+      "pb_mrq": 4.5,
+      "pe_percentile": 70,
+      "pb_percentile": 65,
+      "return_1d": 0.27112516945322107,
+      "return_20d": 1.3556258472661054,
+      "return_60d": 2.7112516945322107,
+      "volatility": 0.01771125169453221,
+      "score": 45,
+      "score_details": {
+        "估值": 5,
+        "动量": 15,
+        "盈利": 10,
+        "仓位": 15
+      }
+    },
+    {
+      "code": "510300",
+      "name": "300ETF",
+      "sector": "宽基",
+      "price": 4.488,
+      "cost": 4.592,
+      "weight": 7.94,
+      "profit_pct": -2.2648083623693207,
+      "change_pct": -1.2323943661971648,
+      "volume": 4742424.14,
+      "pe_ttm": 13.79,
+      "pb_mrq": 1.45,
+      "pe_percentile": 40,
+      "pb_percentile": 30,
+      "return_1d": -1.2323943661971648,
+      "return_20d": -6.161971830985824,
+      "return_60d": -12.323943661971647,
+      "volatility": 0.027323943661971647,
+      "score": 45,
+      "score_details": {
+        "估值": 15,
+        "动量": 5,
+        "盈利": 10,
+        "仓位": 15
+      }
+    },
+    {
+      "code": "159206",
+      "name": "卫星 ETF",
+      "sector": "科技",
+      "price": 1.598,
+      "cost": 1.709,
+      "weight": 4.05,
+      "profit_pct": -6.4950263311878285,
+      "change_pct": -0.929944203347793,
+      "volume": 5071473.5,
+      "pe_ttm": null,
+      "pb_mrq": null,
+      "pe_percentile": 70,
+      "pb_percentile": 50,
+      "return_1d": -0.929944203347793,
+      "return_20d": -4.649721016738965,
+      "return_60d": -9.29944203347793,
+      "volatility": 0.02429944203347793,
+      "score": 40,
+      "score_details": {
+        "估值": 5,
+        "动量": 10,
+        "盈利": 5,
+        "仓位": 20
+      }
+    },
+    {
+      "code": "510500",
+      "name": "500ETF",
+      "sector": "宽基",
+      "price": 7.7,
+      "cost": 7.905,
+      "weight": 4.09,
+      "profit_pct": -2.5932953826691976,
+      "change_pct": -1.6100178890876493,
+      "volume": 3201844.34,
+      "pe_ttm": 34.64,
+      "pb_mrq": 2.39,
+      "pe_percentile": 90,
+      "pb_percentile": 60,
+      "return_1d": -1.6100178890876493,
+      "return_20d": -8.050089445438246,
+      "return_60d": -16.100178890876492,
+      "volatility": 0.031100178890876493,
+      "score": 35,
+      "score_details": {
+        "估值": 0,
+        "动量": 5,
+        "盈利": 10,
+        "仓位": 20
+      }
+    },
+    {
+      "code": "159663",
+      "name": "机床",
+      "sector": "制造",
+      "price": 1.697,
+      "cost": 1.765,
+      "weight": 3.2,
+      "profit_pct": -3.8526912181303024,
+      "change_pct": -3.3048433048432955,
+      "volume": 172202.63,
+      "pe_ttm": 34.64,
+      "pb_mrq": 2.39,
+      "pe_percentile": 90,
+      "pb_percentile": 60,
+      "return_1d": -3.3048433048432955,
+      "return_20d": -16.524216524216477,
+      "return_60d": -33.048433048432955,
+      "volatility": 0.048048433048432954,
+      "score": 30,
+      "score_details": {
+        "估值": 0,
+        "动量": 0,
+        "盈利": 10,
+        "仓位": 20
+      }
+    },
+    {
+      "code": "159566",
+      "name": "储能电池",
+      "sector": "新能源",
+      "price": 2.248,
+      "cost": 2.149,
+      "weight": 8.22,
+      "profit_pct": 4.606793857608199,
+      "change_pct": -1.0563380281689956,
+      "volume": 2389204.0,
+      "pe_ttm": null,
+      "pb_mrq": null,
+      "pe_percentile": 65,
+      "pb_percentile": 50,
+      "return_1d": -1.0563380281689956,
+      "return_20d": -5.281690140844978,
+      "return_60d": -10.563380281689955,
+      "volatility": 0.025563380281689953,
+      "score": 30,
+      "score_details": {
+        "估值": 5,
+        "动量": 5,
+        "盈利": 15,
+        "仓位": 5
+      }
+    },
+    {
+      "code": "159937",
+      "name": "黄金 9999",
+      "sector": "商品",
+      "price": 9.427,
+      "cost": 10.671,
+      "weight": 9.46,
+      "profit_pct": -11.657764033361445,
+      "change_pct": -1.93487985020285,
+      "volume": 2150859.98,
+      "pe_ttm": null,
+      "pb_mrq": null,
+      "pe_percentile": null,
+      "pb_percentile": 50,
+      "return_1d": -1.93487985020285,
+      "return_20d": -9.67439925101425,
+      "return_60d": -19.3487985020285,
+      "volatility": 0.0343487985020285,
+      "score": 25,
+      "score_details": {
+        "估值": 15,
+        "动量": 5,
+        "盈利": 0,
+        "仓位": 5
+      }
+    },
+    {
+      "code": "159363",
+      "name": "创业板 AI",
+      "sector": "科技",
+      "price": 1.066,
+      "cost": 1.078,
+      "weight": 6.29,
+      "profit_pct": -1.113172541743971,
+      "change_pct": -2.5594149908592345,
+      "volume": 5136101.08,
+      "pe_ttm": 40.19,
+      "pb_mrq": 5.45,
+      "pe_percentile": 90,
+      "pb_percentile": 80,
+      "return_1d": -2.5594149908592345,
+      "return_20d": -12.797074954296173,
+      "return_60d": -25.594149908592346,
+      "volatility": 0.04059414990859234,
+      "score": 25,
+      "score_details": {
+        "估值": 0,
+        "动量": 0,
+        "盈利": 10,
+        "仓位": 15
+      }
+    },
+    {
+      "code": "512480",
+      "name": "半导体",
+      "sector": "科技",
+      "price": 1.453,
+      "cost": 1.572,
+      "weight": 2.83,
+      "profit_pct": -7.569974554707379,
+      "change_pct": -2.483221476510062,
+      "volume": 6597208.28,
+      "pe_ttm": 34.64,
+      "pb_mrq": 2.39,
+      "pe_percentile": 90,
+      "pb_percentile": 60,
+      "return_1d": -2.483221476510062,
+      "return_20d": -12.41610738255031,
+      "return_60d": -24.83221476510062,
+      "volatility": 0.03983221476510062,
+      "score": 20,
+      "score_details": {
+        "估值": 0,
+        "动量": 0,
+        "盈利": 5,
+        "仓位": 15
+      }
+    }
+  ],
+  "high_corr_pairs": [
+    [
+      "商品",
+      [
+        "159937",
+        "160723"
+      ]
+    ],
+    [
+      "科技",
+      [
+        "512480",
+        "159363",
+        "159206"
+      ]
+    ],
+    [
+      "宽基",
+      [
+        "510300",
+        "510500"
+      ]
+    ]
+  ]
+}

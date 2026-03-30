@@ -1,0 +1,13 @@
+{
+  "etf_code": "513500",
+  "index_name": "unknown",
+  "pe": null,
+  "pe_percentile": 70.0,
+  "pb": null,
+  "pb_percentile": 63.0,
+  "dividend_yield": 2.0,
+  "trade_date": "20260328",
+  "update_time": "2026-03-28T13:45:56.425439",
+  "data_source": "dividend_yield_estimate",
+  "cache_hit": false
+}

@@ -1,0 +1,13 @@
+{
+  "etf_code": "159819",
+  "index_name": "\u4eba\u5de5\u667a\u80fd",
+  "pe": null,
+  "pe_percentile": 40.0,
+  "pb": null,
+  "pb_percentile": 36.0,
+  "dividend_yield": 1.0,
+  "trade_date": "20260328",
+  "update_time": "2026-03-28T13:45:56.422186",
+  "data_source": "sector_median_estimate",
+  "cache_hit": false
+}

@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-03-29T10:51:48.547405",
+  "vix": {
+    "value": 0,
+    "level": "normal"
+  },
+  "breadth": {
+    "up_count": 0,
+    "down_count": 0,
+    "ratio": Infinity,
+    "sentiment": "bullish"
+  },
+  "volume": {
+    "latest_vol": 192400388.0,
+    "avg_vol": 250478183.4,
+    "ratio": 0.7681323195032402,
+    "sentiment": "normal"
+  },
+  "north_flow": {
+    "total_inflow": 0,
+    "avg_daily": 0.0,
+    "sentiment": "outflow"
+  },
+  "sentiment": {
+    "score": 55,
+    "level": "中性",
+    "action": "观望为主"
+  }
+}

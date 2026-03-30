@@ -1,0 +1,165 @@
+{
+  "system_name": "ETF-QuantaAlpha 统一投资管理系统 v2.0",
+  "version": "2.0",
+  "updated_at": "2026-03-28T12:05:00+08:00",
+  
+  "four_layer_structure": {
+    "cash_reserve": {
+      "target_pct": 0.10,
+      "target_amount": 20000,
+      "investment": "511880",
+      "usage_rules": {
+        "market_drop_5pct": 0.30,
+        "market_drop_10pct": 0.50,
+        "market_drop_15pct": 0.80
+      }
+    },
+    "layer1_defensive": {
+      "target_pct": 0.27,
+      "target_amount": 54000,
+      "build_period_weeks": [8, 12],
+      "etfs": [
+        {"code": "510880", "name": "红利 ETF", "target_weight": 0.20, "amount": 10800},
+        {"code": "510300", "name": "300ETF", "target_weight": 0.20, "amount": 10800},
+        {"code": "510180", "name": "180ETF", "target_weight": 0.20, "amount": 10800},
+        {"code": "159399", "name": "现金流", "target_weight": 0.20, "amount": 10800},
+        {"code": "510500", "name": "500ETF", "target_weight": 0.20, "amount": 10800}
+      ]
+    },
+    "layer2_future": {
+      "target_pct": 0.27,
+      "target_amount": 54000,
+      "build_period_weeks": [8, 12],
+      "etfs": [
+        {"code": "515790", "name": "光伏 ETF", "theme": "光伏", "target_weight": 0.14, "amount": 7560},
+        {"code": "159566", "name": "储能电池", "theme": "储能", "target_weight": 0.14, "amount": 7560},
+        {"code": "512480", "name": "半导体", "theme": "半导体", "target_weight": 0.14, "amount": 7560},
+        {"code": "159819", "name": "AI 智能", "theme": "AI", "target_weight": 0.14, "amount": 7560},
+        {"code": "512010", "name": "医药 ETF", "theme": "医药", "target_weight": 0.14, "amount": 7560},
+        {"code": "159663", "name": "机床 ETF", "theme": "机床", "target_weight": 0.14, "amount": 7560},
+        {"code": "562500", "name": "机器人 ETF", "theme": "机器人", "target_weight": 0.08, "amount": 4320},
+        {"code": "159227", "name": "航空航天", "theme": "航空航天", "target_weight": 0.08, "amount": 4320}
+      ]
+    },
+    "layer3_quant": {
+      "target_pct": 0.20,
+      "target_amount": 40000,
+      "build_period_weeks": [2, 3],
+      "strategy": "high_momentum_high_volatility",
+      "rebalance_frequency": "weekly",
+      "rebalance_day": "monday",
+      "rebalance_time": "14:30",
+      "trigger_rebalance": {
+        "enabled": true,
+        "stop_loss": -0.05,
+        "take_profit_1": 0.10,
+        "take_profit_2": 0.20
+      },
+      "etfs": [
+        {"code": "512880", "name": "证券 ETF", "target_weight": 0.10, "amount": 4000},
+        {"code": "512400", "name": "有色 ETF", "target_weight": 0.08, "amount": 3200},
+        {"code": "512980", "name": "传媒 ETF", "target_weight": 0.08, "amount": 3200},
+        {"code": "515260", "name": "电子 ETF", "target_weight": 0.08, "amount": 3200},
+        {"code": "512800", "name": "银行 ETF", "target_weight": 0.08, "amount": 3200},
+        {"code": "516110", "name": "汽车 ETF", "target_weight": 0.08, "amount": 3200},
+        {"code": "512720", "name": "计算机 ETF", "target_weight": 0.07, "amount": 2800},
+        {"code": "516020", "name": "化工 ETF", "target_weight": 0.07, "amount": 2800},
+        {"code": "515880", "name": "通信 ETF", "target_weight": 0.07, "amount": 2800},
+        {"code": "515210", "name": "钢铁 ETF", "target_weight": 0.07, "amount": 2800},
+        {"code": "512660", "name": "军工 ETF", "target_weight": 0.07, "amount": 2800},
+        {"code": "512200", "name": "地产 ETF", "target_weight": 0.07, "amount": 2800}
+      ],
+      "trading_rules": {
+        "take_profit_1": 0.10,
+        "take_profit_2": 0.20,
+        "stop_loss": -0.05,
+        "momentum_threshold_5d": 0.03,
+        "min_liquidity": 5e7,
+        "min_volatility": 0.25,
+        "rebalance_time": "14:30"
+      }
+    },
+    "layer4_global": {
+      "target_pct": 0.16,
+      "target_amount": 32000,
+      "build_period_weeks": [2, 3],
+      "etfs": [
+        {"code": "513110", "name": "纳指 100", "market": "美股", "target_weight": 0.30, "amount": 9600},
+        {"code": "513500", "name": "标普 500", "market": "美股", "target_weight": 0.20, "amount": 6400},
+        {"code": "159937", "name": "黄金 9999", "market": "商品", "target_weight": 0.25, "amount": 8000},
+        {"code": "160723", "name": "嘉实原油", "market": "商品", "target_weight": 0.15, "amount": 4800},
+        {"code": "513130", "name": "恒生科技", "market": "港股", "target_weight": 0.10, "amount": 3200}
+      ]
+    }
+  },
+  
+  "risk_control": {
+    "single_stop_loss": -0.08,
+    "single_take_profit": 0.20,
+    "portfolio_stop_loss": -0.10,
+    "layer3_stop_loss": -0.08,
+    "layer3_take_profit_1": 0.15,
+    "layer3_take_profit_2": 0.25
+  },
+  
+  "data_sources": {
+    "holdings_file": "holdings_current.json",
+    "etf_cache_dir": "etf_data_cache/",
+    "backup_dir": "holdings_backup/",
+    "log_file": "unified_system.log",
+    "tushare_token": "7a534da257fa5505df132208cb1b5c3ea648a79763c9829d74dcca75",
+    "realtime_enabled": true
+  },
+  
+  "schedule": {
+    "daily_report": "16:00",
+    "rebalance_day": "last_trading_day_of_month",
+    "layer3_rebalance": "daily",
+    "layer3_rebalance_time": "14:30",
+    "market_check": ["09:30", "11:30", "15:00"],
+    "realtime_monitoring": {
+      "enabled": true,
+      "interval_seconds": 180,
+      "trading_hours": "09:30-11:30,13:00-15:00",
+      "integrated_with_triggers": true
+    }
+  },
+  
+  "build_plan": {
+    "version": "v4.0 稳健版",
+    "decision_time": "2026-03-30T14:00:00+08:00",
+    "phase1_monday": {
+      "date": "2026-03-30",
+      "description": "决策日 + 调出 + 第三层建仓",
+      "layer3": 20000,
+      "sell_etfs": 60394,
+      "cash_reserve": 0,
+      "total": -40394
+    },
+    "phase2_tuesday": {
+      "date": "2026-03-31",
+      "description": "第三层剩余 + 第二层 1/3",
+      "layer3": 20000,
+      "layer2": 9000,
+      "other": 9000,
+      "total": 38000
+    },
+    "phase3_wednesday": {
+      "date": "2026-04-01",
+      "description": "第二层 2/3 + 其他 1/3",
+      "layer2": 17791,
+      "other": 9000,
+      "total": 26791
+    },
+    "phase4_thursday": {
+      "date": "2026-04-02",
+      "description": "其他 1/3 + 第一层 + 现金配置",
+      "layer1": 8000,
+      "other": 4791,
+      "new_etfs": 10000,
+      "cash_reserve": 20000,
+      "total": 42791,
+      "completion_check": true
+    }
+  }
+}

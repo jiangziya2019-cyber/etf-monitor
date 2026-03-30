@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-03-28T10:37:12.722291",
+  "stage": 8,
+  "etf_pool_size": 608,
+  "full_market": {
+    "train_arr": 6.95,
+    "test_arr": 19.87
+  },
+  "stage7_comparison": {
+    "test_arr": 24.52,
+    "improvement": -4.649999999999999
+  }
+}

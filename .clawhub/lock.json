@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "skills": {
+    "frontend-design-3": {
+      "version": "0.1.0",
+      "installedAt": 1774866241068
+    },
+    "superpowers-mode": {
+      "version": "1.0.1",
+      "installedAt": 1774866422401
+    },
+    "superpowers-verification": {
+      "version": "1.0.0",
+      "installedAt": 1774866483886
+    },
+    "superpowers-brainstorming": {
+      "version": "1.0.0",
+      "installedAt": 1774866602028
+    },
+    "superpowers-overview": {
+      "version": "1.2.0",
+      "installedAt": 1774866674719
+    },
+    "nano-pdf": {
+      "version": "1.0.0",
+      "installedAt": 1774866901419
+    },
+    "word-document-organizer": {
+      "version": "1.0.1",
+      "installedAt": 1774866961961
+    },
+    "excel-xlsx": {
+      "version": "1.0.2",
+      "installedAt": 1774866970069
+    },
+    "ppt-generator": {
+      "version": "1.0.0",
+      "installedAt": 1774867262701
+    },
+    "pua": {
+      "version": "2.9.0",
+      "installedAt": 1774867561821
+    },
+    "skill-creator-operator": {
+      "version": "1.0.1",
+      "installedAt": 1774868222213
+    },
+    "skill-creator-2": {
+      "version": "0.1.0",
+      "installedAt": 1774868223491
+    },
+    "skill-creator-pro": {
+      "version": "2.0.0",
+      "installedAt": 1774868583927
+    }
+  }
+}

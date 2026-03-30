@@ -1,0 +1,208 @@
+{
+  "version": "v2.0",
+  "timestamp": "2026-03-29T17:11:22.880199",
+  "layers": {
+    "layer1": [
+      {
+        "code": "159915",
+        "name": "创业板 ETF",
+        "score": 0.5532828176149225,
+        "weight": 0.04,
+        "allocation": 40000.0
+      },
+      {
+        "code": "510300",
+        "name": "沪深 300ETF",
+        "score": 0.5392082462556085,
+        "weight": 0.04,
+        "allocation": 40000.0
+      },
+      {
+        "code": "510880",
+        "name": "红利 ETF",
+        "score": 0.5333093056817232,
+        "weight": 0.04,
+        "allocation": 40000.0
+      },
+      {
+        "code": "510500",
+        "name": "中证 500ETF",
+        "score": 0.45672301548844196,
+        "weight": 0.04,
+        "allocation": 40000.0
+      }
+    ],
+    "layer2": [
+      {
+        "code": "515790",
+        "name": "光伏 ETF",
+        "score": 0.5343962790552803,
+        "weight": 0.035,
+        "allocation": 35000.0,
+        "policy": "双碳战略"
+      },
+      {
+        "code": "160723",
+        "name": "嘉实原油",
+        "score": 0.5304254034488857,
+        "weight": 0.035,
+        "allocation": 35000.0,
+        "policy": "能源安全"
+      },
+      {
+        "code": "512760",
+        "name": "512760",
+        "score": 0.52,
+        "weight": 0.035,
+        "allocation": 35000.0,
+        "policy": "半导体"
+      },
+      {
+        "code": "512010",
+        "name": "医药 ETF",
+        "score": 0.5162481635641504,
+        "weight": 0.035,
+        "allocation": 35000.0,
+        "policy": "医药创新"
+      },
+      {
+        "code": "515980",
+        "name": "515980",
+        "score": 0.51,
+        "weight": 0.035,
+        "allocation": 35000.0,
+        "policy": "AI 战略"
+      },
+      {
+        "code": "159663",
+        "name": "储能电池 ETF",
+        "score": 0.5078187282799814,
+        "weight": 0.035,
+        "allocation": 35000.0,
+        "policy": "新能源"
+      },
+      {
+        "code": "512480",
+        "name": "半导体 ETF",
+        "score": 0.5075221226165799,
+        "weight": 0.035,
+        "allocation": 35000.0,
+        "policy": "国产替代"
+      },
+      {
+        "code": "515200",
+        "name": "515200",
+        "score": 0.5,
+        "weight": 0.024999999999999994,
+        "allocation": 24999.999999999993,
+        "policy": "硬科技"
+      }
+    ],
+    "layer3": [
+      {
+        "code": "512660",
+        "name": "512660",
+        "score": 0.49,
+        "weight": 0.02,
+        "allocation": 20000.0,
+        "type": "行业"
+      },
+      {
+        "code": "512200",
+        "name": "房地产 ETF",
+        "score": 0.48768699278905164,
+        "weight": 0.02,
+        "allocation": 20000.0,
+        "type": "周期"
+      },
+      {
+        "code": "518880",
+        "name": "黄金 9999",
+        "score": 0.48563984290435025,
+        "weight": 0.02,
+        "allocation": 20000.0,
+        "type": "贵金属"
+      },
+      {
+        "code": "515070",
+        "name": "515070",
+        "score": 0.48,
+        "weight": 0.02,
+        "allocation": 20000.0,
+        "type": "行业"
+      },
+      {
+        "code": "159985",
+        "name": "159985",
+        "score": 0.47,
+        "weight": 0.02,
+        "allocation": 20000.0,
+        "type": "商品"
+      },
+      {
+        "code": "159981",
+        "name": "159981",
+        "score": 0.46,
+        "weight": 0.02,
+        "allocation": 20000.0,
+        "type": "商品"
+      },
+      {
+        "code": "512880",
+        "name": "512880",
+        "score": 0.45,
+        "weight": 0.02,
+        "allocation": 20000.0,
+        "type": "金融"
+      },
+      {
+        "code": "515030",
+        "name": "消费 ETF",
+        "score": 0.445090149139278,
+        "weight": 0.02,
+        "allocation": 20000.0,
+        "type": "消费"
+      },
+      {
+        "code": "512690",
+        "name": "512690",
+        "score": 0.44,
+        "weight": 0.02,
+        "allocation": 20000.0,
+        "type": "消费"
+      },
+      {
+        "code": "159937",
+        "name": "159937",
+        "score": 0.4257166034594496,
+        "weight": 0.02,
+        "allocation": 20000.0,
+        "type": "贵金属"
+      }
+    ],
+    "layer4": [
+      {
+        "code": "513500",
+        "name": "标普 500ETF",
+        "score": 0.6301251346495667,
+        "weight": 0.035,
+        "allocation": 35000.0
+      },
+      {
+        "code": "513110",
+        "name": "纳指 100ETF",
+        "score": 0.5673129066649607,
+        "weight": 0.035,
+        "allocation": 35000.0
+      }
+    ],
+    "cash": [
+      {
+        "code": "CASH",
+        "name": "现金/货基",
+        "weight": 0.1,
+        "allocation": 100000.0
+      }
+    ]
+  }
+}

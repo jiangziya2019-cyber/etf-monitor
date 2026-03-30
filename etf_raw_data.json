@@ -1,0 +1,166 @@
+{
+  "512010": {
+    "name": "医药 ETF",
+    "price": 0.352,
+    "change": -0.007,
+    "change_pct": -1.95,
+    "volume": 10535108.0,
+    "amount": 375009857.0
+  },
+  "515790": {
+    "name": "光伏 ETF",
+    "price": 1.104,
+    "change": -0.032,
+    "change_pct": -2.82,
+    "volume": 4650479.0,
+    "amount": 519282600.0
+  },
+  "512480": {
+    "name": "半导体 ETF",
+    "price": 1.45,
+    "change": -0.04,
+    "change_pct": -2.68,
+    "volume": 6025266.0,
+    "amount": 883389681.0
+  },
+  "513110": {
+    "name": "纳指 ETF",
+    "price": 1.945,
+    "change": -0.02,
+    "change_pct": -1.02,
+    "volume": 328258.0,
+    "amount": 64235505.0
+  },
+  "517520": {
+    "name": "新能源车 ETF",
+    "price": 2.12,
+    "change": -0.075,
+    "change_pct": -3.42,
+    "volume": 1923204.0,
+    "amount": 412955986.0
+  },
+  "510300": {
+    "name": "300ETF",
+    "price": 4.48,
+    "change": -0.064,
+    "change_pct": -1.41,
+    "volume": 4405842.0,
+    "amount": 1988142394.0
+  },
+  "510500": {
+    "name": "500ETF",
+    "price": 7.686,
+    "change": -0.14,
+    "change_pct": -1.79,
+    "volume": 2993748.0,
+    "amount": 2319942882.0
+  },
+  "518880": {
+    "name": "黄金 ETF",
+    "price": 9.449,
+    "change": -0.192,
+    "change_pct": -1.99,
+    "volume": 10508011.0,
+    "amount": 9989124945.0
+  },
+  "159770": {
+    "name": "芯片 ETF",
+    "price": 0.955,
+    "change": -0.015,
+    "change_pct": -1.55,
+    "volume": 1474627.0,
+    "amount": 142549640.991
+  },
+  "159243": {
+    "name": "科创 50ETF",
+    "price": 1.072,
+    "change": -0.034,
+    "change_pct": -3.07,
+    "volume": 224070.0,
+    "amount": 24443334.194
+  },
+  "159399": {
+    "name": "现金流 ETF",
+    "price": 1.115,
+    "change": -0.015,
+    "change_pct": -1.33,
+    "volume": 2720678.0,
+    "amount": 305344159.514
+  },
+  "159241": {
+    "name": "恒生科技 ETF",
+    "price": 1.277,
+    "change": -0.029,
+    "change_pct": -2.22,
+    "volume": 770671.0,
+    "amount": 99066084.9
+  },
+  "160723": {
+    "name": "原油 ETF",
+    "error": "not found"
+  },
+  "159227": {
+    "name": "碳中和 ETF",
+    "price": 1.25,
+    "change": -0.028,
+    "change_pct": -2.19,
+    "volume": 1955950.0,
+    "amount": 246720210.7
+  },
+  "159819": {
+    "name": "人工智能 ETF",
+    "price": 1.471,
+    "change": -0.043,
+    "change_pct": -2.84,
+    "volume": 2098769.0,
+    "amount": 312771563.559
+  },
+  "159206": {
+    "name": "消费电子 ETF",
+    "price": 1.592,
+    "change": -0.021,
+    "change_pct": -1.3,
+    "volume": 4835419.0,
+    "amount": 775024994.706
+  },
+  "159663": {
+    "name": "科创芯片 ETF",
+    "price": 1.691,
+    "change": -0.064,
+    "change_pct": -3.65,
+    "volume": 166611.0,
+    "amount": 28651115.101
+  },
+  "159566": {
+    "name": "红利低波 ETF",
+    "price": 2.244,
+    "change": -0.028,
+    "change_pct": -1.23,
+    "volume": 2291106.0,
+    "amount": 519181947.2
+  },
+  "159937": {
+    "name": "医药生物 ETF",
+    "price": 9.422,
+    "change": -0.191,
+    "change_pct": -1.99,
+    "volume": 2036872.0,
+    "amount": 1929985972.391
+  },
+  "510880": {
+    "name": "红利 ETF",
+    "price": 3.265,
+    "change": 0.009,
+    "change_pct": 0.28,
+    "volume": 1066389.0,
+    "amount": 348812288.0
+  },
+  "513500": {
+    "name": "标普 500ETF",
+    "price": 2.22,
+    "change": 0.007,
+    "change_pct": 0.32,
+    "volume": 876860.0,
+    "amount": 194872219.0
+  }
+}

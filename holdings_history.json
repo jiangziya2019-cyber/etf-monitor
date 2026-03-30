@@ -1,0 +1,1326 @@
+{
+  "description": "持仓历史记录 - 每日持仓快照",
+  "created": "2026-03-30T22:24:08.102207",
+  "records": [
+    {
+      "date": "2026-02-28",
+      "total_value": 56399.36,
+      "total_profit": -918.99,
+      "yield_rate": -1.6,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.191,
+          "shares": 3810,
+          "market_value": 12157.71
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.552,
+          "shares": 3329,
+          "market_value": 5166.61
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.142,
+          "shares": 6462,
+          "market_value": 13841.6
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.534,
+          "shares": 1189,
+          "market_value": 12524.93
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.456,
+          "shares": 2852,
+          "market_value": 12708.51
+        }
+      ]
+    },
+    {
+      "date": "2026-03-01",
+      "total_value": 57384.52,
+      "total_profit": 66.17,
+      "yield_rate": 0.12,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.196,
+          "shares": 3844,
+          "market_value": 12285.42
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.489,
+          "shares": 3279,
+          "market_value": 4882.43
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.218,
+          "shares": 6448,
+          "market_value": 14301.66
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 11.049,
+          "shares": 1171,
+          "market_value": 12938.38
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.467,
+          "shares": 2905,
+          "market_value": 12976.63
+        }
+      ]
+    },
+    {
+      "date": "2026-03-02",
+      "total_value": 57143.72,
+      "total_profit": -174.63,
+      "yield_rate": -0.3,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.168,
+          "shares": 3719,
+          "market_value": 11781.79
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.638,
+          "shares": 3321,
+          "market_value": 5439.8
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.187,
+          "shares": 6410,
+          "market_value": 14018.67
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 11.014,
+          "shares": 1204,
+          "market_value": 13260.86
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.436,
+          "shares": 2850,
+          "market_value": 12642.6
+        }
+      ]
+    },
+    {
+      "date": "2026-03-03",
+      "total_value": 58639.25,
+      "total_profit": 1320.9,
+      "yield_rate": 2.3,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.163,
+          "shares": 3867,
+          "market_value": 12231.32
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.565,
+          "shares": 3215,
+          "market_value": 5031.47
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.152,
+          "shares": 6495,
+          "market_value": 13977.24
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.797,
+          "shares": 1313,
+          "market_value": 14176.46
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.533,
+          "shares": 2917,
+          "market_value": 13222.76
+        }
+      ]
+    },
+    {
+      "date": "2026-03-04",
+      "total_value": 58936.09,
+      "total_profit": 1617.74,
+      "yield_rate": 2.82,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.318,
+          "shares": 3720,
+          "market_value": 12342.96
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.64,
+          "shares": 3264,
+          "market_value": 5352.96
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.217,
+          "shares": 6474,
+          "market_value": 14352.86
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.246,
+          "shares": 1264,
+          "market_value": 12950.94
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.776,
+          "shares": 2918,
+          "market_value": 13936.37
+        }
+      ]
+    },
+    {
+      "date": "2026-03-05",
+      "total_value": 60255.46,
+      "total_profit": 2937.11,
+      "yield_rate": 5.12,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.395,
+          "shares": 3754,
+          "market_value": 12744.83
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.624,
+          "shares": 3230,
+          "market_value": 5245.52
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.171,
+          "shares": 6509,
+          "market_value": 14131.04
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.997,
+          "shares": 1349,
+          "market_value": 14834.95
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.597,
+          "shares": 2893,
+          "market_value": 13299.12
+        }
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "total_value": 58684.28,
+      "total_profit": 1365.93,
+      "yield_rate": 2.38,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.296,
+          "shares": 3866,
+          "market_value": 12742.34
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.546,
+          "shares": 3219,
+          "market_value": 4976.57
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.132,
+          "shares": 6408,
+          "market_value": 13661.86
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.855,
+          "shares": 1347,
+          "market_value": 14621.69
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.408,
+          "shares": 2877,
+          "market_value": 12681.82
+        }
+      ]
+    },
+    {
+      "date": "2026-03-07",
+      "total_value": 59368.77,
+      "total_profit": 2050.42,
+      "yield_rate": 3.58,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.291,
+          "shares": 3862,
+          "market_value": 12709.84
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.532,
+          "shares": 3309,
+          "market_value": 5069.39
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.225,
+          "shares": 6385,
+          "market_value": 14206.62
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 11.124,
+          "shares": 1238,
+          "market_value": 13771.51
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.741,
+          "shares": 2871,
+          "market_value": 13611.41
+        }
+      ]
+    },
+    {
+      "date": "2026-03-08",
+      "total_value": 59887.99,
+      "total_profit": 2569.64,
+      "yield_rate": 4.48,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.353,
+          "shares": 3847,
+          "market_value": 12898.99
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.629,
+          "shares": 3216,
+          "market_value": 5238.86
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.155,
+          "shares": 6492,
+          "market_value": 13990.26
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 11.173,
+          "shares": 1323,
+          "market_value": 14781.88
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.486,
+          "shares": 2893,
+          "market_value": 12978.0
+        }
+      ]
+    },
+    {
+      "date": "2026-03-09",
+      "total_value": 58653.72,
+      "total_profit": 1335.37,
+      "yield_rate": 2.33,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.323,
+          "shares": 3901,
+          "market_value": 12963.02
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.639,
+          "shares": 3266,
+          "market_value": 5352.97
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.173,
+          "shares": 6394,
+          "market_value": 13894.16
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.552,
+          "shares": 1307,
+          "market_value": 13791.46
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.387,
+          "shares": 2884,
+          "market_value": 12652.11
+        }
+      ]
+    },
+    {
+      "date": "2026-03-10",
+      "total_value": 56121.94,
+      "total_profit": -1196.41,
+      "yield_rate": -2.09,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.162,
+          "shares": 3911,
+          "market_value": 12366.58
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.579,
+          "shares": 3247,
+          "market_value": 5127.01
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.092,
+          "shares": 6524,
+          "market_value": 13648.21
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.294,
+          "shares": 1178,
+          "market_value": 12126.33
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.378,
+          "shares": 2936,
+          "market_value": 12853.81
+        }
+      ]
+    },
+    {
+      "date": "2026-03-11",
+      "total_value": 57942.97,
+      "total_profit": 624.62,
+      "yield_rate": 1.09,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.357,
+          "shares": 3720,
+          "market_value": 12488.04
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.555,
+          "shares": 3339,
+          "market_value": 5192.14
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.099,
+          "shares": 6514,
+          "market_value": 13672.89
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.702,
+          "shares": 1291,
+          "market_value": 13816.28
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.443,
+          "shares": 2875,
+          "market_value": 12773.62
+        }
+      ]
+    },
+    {
+      "date": "2026-03-12",
+      "total_value": 59683.49,
+      "total_profit": 2365.14,
+      "yield_rate": 4.13,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.378,
+          "shares": 3889,
+          "market_value": 13137.04
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.541,
+          "shares": 3345,
+          "market_value": 5154.64
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.056,
+          "shares": 6522,
+          "market_value": 13409.23
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 11.043,
+          "shares": 1317,
+          "market_value": 14543.63
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.531,
+          "shares": 2966,
+          "market_value": 13438.95
+        }
+      ]
+    },
+    {
+      "date": "2026-03-13",
+      "total_value": 59103.54,
+      "total_profit": 1785.19,
+      "yield_rate": 3.11,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.406,
+          "shares": 3908,
+          "market_value": 13310.65
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.63,
+          "shares": 3271,
+          "market_value": 5331.73
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.119,
+          "shares": 6406,
+          "market_value": 13574.31
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.604,
+          "shares": 1264,
+          "market_value": 13403.46
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.746,
+          "shares": 2841,
+          "market_value": 13483.39
+        }
+      ]
+    },
+    {
+      "date": "2026-03-14",
+      "total_value": 59477.23,
+      "total_profit": 2158.88,
+      "yield_rate": 3.77,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.235,
+          "shares": 3810,
+          "market_value": 12325.35
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.63,
+          "shares": 3298,
+          "market_value": 5375.74
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.078,
+          "shares": 6341,
+          "market_value": 13176.6
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.772,
+          "shares": 1343,
+          "market_value": 14466.8
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.733,
+          "shares": 2986,
+          "market_value": 14132.74
+        }
+      ]
+    },
+    {
+      "date": "2026-03-15",
+      "total_value": 57422.87,
+      "total_profit": 104.52,
+      "yield_rate": 0.18,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.287,
+          "shares": 3743,
+          "market_value": 12303.24
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.62,
+          "shares": 3342,
+          "market_value": 5414.04
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.226,
+          "shares": 6414,
+          "market_value": 14277.56
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.53,
+          "shares": 1176,
+          "market_value": 12383.28
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.531,
+          "shares": 2879,
+          "market_value": 13044.75
+        }
+      ]
+    },
+    {
+      "date": "2026-03-16",
+      "total_value": 58172.64,
+      "total_profit": 854.29,
+      "yield_rate": 1.49,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.335,
+          "shares": 3845,
+          "market_value": 12823.08
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.539,
+          "shares": 3253,
+          "market_value": 5006.37
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.221,
+          "shares": 6423,
+          "market_value": 14265.48
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.237,
+          "shares": 1250,
+          "market_value": 12796.25
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.639,
+          "shares": 2863,
+          "market_value": 13281.46
+        }
+      ]
+    },
+    {
+      "date": "2026-03-17",
+      "total_value": 58138.39,
+      "total_profit": 820.04,
+      "yield_rate": 1.43,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.172,
+          "shares": 3779,
+          "market_value": 11986.99
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.531,
+          "shares": 3230,
+          "market_value": 4945.13
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.087,
+          "shares": 6477,
+          "market_value": 13517.5
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.583,
+          "shares": 1307,
+          "market_value": 13831.98
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.599,
+          "shares": 3013,
+          "market_value": 13856.79
+        }
+      ]
+    },
+    {
+      "date": "2026-03-18",
+      "total_value": 58145.51,
+      "total_profit": 827.16,
+      "yield_rate": 1.44,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.255,
+          "shares": 3721,
+          "market_value": 12111.85
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.585,
+          "shares": 3376,
+          "market_value": 5350.96
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.14,
+          "shares": 6527,
+          "market_value": 13967.78
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.335,
+          "shares": 1285,
+          "market_value": 13280.48
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.699,
+          "shares": 2859,
+          "market_value": 13434.44
+        }
+      ]
+    },
+    {
+      "date": "2026-03-19",
+      "total_value": 58379.13,
+      "total_profit": 1060.78,
+      "yield_rate": 1.85,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.182,
+          "shares": 3764,
+          "market_value": 11977.05
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.541,
+          "shares": 3268,
+          "market_value": 5035.99
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.213,
+          "shares": 6531,
+          "market_value": 14453.1
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.811,
+          "shares": 1287,
+          "market_value": 13913.76
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.414,
+          "shares": 2945,
+          "market_value": 12999.23
+        }
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "total_value": 60073.46,
+      "total_profit": 2755.11,
+      "yield_rate": 4.81,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.153,
+          "shares": 3910,
+          "market_value": 12328.23
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.638,
+          "shares": 3209,
+          "market_value": 5256.34
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.214,
+          "shares": 6529,
+          "market_value": 14455.21
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 11.174,
+          "shares": 1265,
+          "market_value": 14135.11
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.705,
+          "shares": 2954,
+          "market_value": 13898.57
+        }
+      ]
+    },
+    {
+      "date": "2026-03-21",
+      "total_value": 59501.62,
+      "total_profit": 2183.27,
+      "yield_rate": 3.81,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.262,
+          "shares": 3905,
+          "market_value": 12738.11
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.544,
+          "shares": 3322,
+          "market_value": 5129.17
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.248,
+          "shares": 6463,
+          "market_value": 14528.82
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.309,
+          "shares": 1220,
+          "market_value": 12576.98
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.806,
+          "shares": 3023,
+          "market_value": 14528.54
+        }
+      ]
+    },
+    {
+      "date": "2026-03-22",
+      "total_value": 57703.58,
+      "total_profit": 385.23,
+      "yield_rate": 0.67,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.194,
+          "shares": 3803,
+          "market_value": 12146.78
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.581,
+          "shares": 3248,
+          "market_value": 5135.09
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.057,
+          "shares": 6342,
+          "market_value": 13045.49
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.893,
+          "shares": 1256,
+          "market_value": 13681.61
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.765,
+          "shares": 2874,
+          "market_value": 13694.61
+        }
+      ]
+    },
+    {
+      "date": "2026-03-23",
+      "total_value": 59902.12,
+      "total_profit": 2583.77,
+      "yield_rate": 4.51,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.296,
+          "shares": 3754,
+          "market_value": 12373.18
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.536,
+          "shares": 3270,
+          "market_value": 5022.72
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.174,
+          "shares": 6370,
+          "market_value": 13848.38
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.984,
+          "shares": 1343,
+          "market_value": 14751.51
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.687,
+          "shares": 2967,
+          "market_value": 13906.33
+        }
+      ]
+    },
+    {
+      "date": "2026-03-24",
+      "total_value": 59368.33,
+      "total_profit": 2049.98,
+      "yield_rate": 3.58,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.342,
+          "shares": 3771,
+          "market_value": 12602.68
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.611,
+          "shares": 3284,
+          "market_value": 5290.52
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.068,
+          "shares": 6411,
+          "market_value": 13257.95
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.948,
+          "shares": 1311,
+          "market_value": 14352.83
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.809,
+          "shares": 2883,
+          "market_value": 13864.35
+        }
+      ]
+    },
+    {
+      "date": "2026-03-25",
+      "total_value": 59533.46,
+      "total_profit": 2215.11,
+      "yield_rate": 3.86,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.315,
+          "shares": 3802,
+          "market_value": 12603.63
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.64,
+          "shares": 3230,
+          "market_value": 5297.2
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.223,
+          "shares": 6497,
+          "market_value": 14442.83
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.692,
+          "shares": 1350,
+          "market_value": 14434.2
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.46,
+          "shares": 2860,
+          "market_value": 12755.6
+        }
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "total_value": 58886.67,
+      "total_profit": 1568.32,
+      "yield_rate": 2.74,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.128,
+          "shares": 3834,
+          "market_value": 11992.75
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.612,
+          "shares": 3214,
+          "market_value": 5180.97
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.098,
+          "shares": 6489,
+          "market_value": 13613.92
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.976,
+          "shares": 1291,
+          "market_value": 14170.02
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.594,
+          "shares": 3032,
+          "market_value": 13929.01
+        }
+      ]
+    },
+    {
+      "date": "2026-03-27",
+      "total_value": 57753.5,
+      "total_profit": 435.15,
+      "yield_rate": 0.76,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.135,
+          "shares": 3802,
+          "market_value": 11919.27
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.537,
+          "shares": 3258,
+          "market_value": 5007.55
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.104,
+          "shares": 6443,
+          "market_value": 13556.07
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.482,
+          "shares": 1268,
+          "market_value": 13291.18
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.718,
+          "shares": 2963,
+          "market_value": 13979.43
+        }
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "total_value": 57327.18,
+      "total_profit": 8.83,
+      "yield_rate": 0.02,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.17,
+          "shares": 3916,
+          "market_value": 12413.72
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.564,
+          "shares": 3340,
+          "market_value": 5223.76
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.097,
+          "shares": 6507,
+          "market_value": 13645.18
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.716,
+          "shares": 1169,
+          "market_value": 12527.0
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.53,
+          "shares": 2984,
+          "market_value": 13517.52
+        }
+      ]
+    },
+    {
+      "date": "2026-03-29",
+      "total_value": 59731.55,
+      "total_profit": 2413.2,
+      "yield_rate": 4.21,
+      "etf_count": 5,
+      "etfs": [
+        {
+          "code": "510880",
+          "name": "红利 ETF",
+          "price": 3.284,
+          "shares": 3824,
+          "market_value": 12558.02
+        },
+        {
+          "code": "512480",
+          "name": "半导体",
+          "price": 1.64,
+          "shares": 3363,
+          "market_value": 5515.32
+        },
+        {
+          "code": "159566",
+          "name": "储能电池",
+          "price": 2.21,
+          "shares": 6373,
+          "market_value": 14084.33
+        },
+        {
+          "code": "159937",
+          "name": "黄金 9999",
+          "price": 10.699,
+          "shares": 1345,
+          "market_value": 14390.16
+        },
+        {
+          "code": "510300",
+          "name": "300ETF",
+          "price": 4.565,
+          "shares": 2888,
+          "market_value": 13183.72
+        }
+      ]
+    }
+  ]
+}

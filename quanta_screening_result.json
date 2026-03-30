@@ -1,0 +1,113 @@
+{
+  "timestamp": "2026-03-27T12:30:53.541003",
+  "market_regime": "bear",
+  "iterations": 2,
+  "total_rules": 12,
+  "selected_etfs": [
+    {
+      "code": "159930",
+      "name": "",
+      "selected_by": 2,
+      "rules": [
+        "中期趋势延续",
+        "波动率收缩突破"
+      ],
+      "price": 1.75,
+      "change_pct": 0.9809578765147088
+    },
+    {
+      "code": "161032",
+      "name": "",
+      "selected_by": 2,
+      "rules": [
+        "中期趋势延续",
+        "波动率收缩突破"
+      ],
+      "price": 2.319,
+      "change_pct": 0.9577710056595471
+    },
+    {
+      "code": "501092",
+      "name": "",
+      "selected_by": 2,
+      "rules": [
+        "中期趋势延续",
+        "波动率收缩突破"
+      ],
+      "price": 1.297,
+      "change_pct": 0.9338521400778219
+    },
+    {
+      "code": "501025",
+      "name": "",
+      "selected_by": 2,
+      "rules": [
+        "中期趋势延续",
+        "波动率收缩突破"
+      ],
+      "price": 1.639,
+      "change_pct": 0.9236453201970382
+    },
+    {
+      "code": "159637",
+      "name": "",
+      "selected_by": 2,
+      "rules": [
+        "中期趋势延续",
+        "波动率收缩突破"
+      ],
+      "price": 0.919,
+      "change_pct": 0.8781558726673991
+    },
+    {
+      "code": "160723",
+      "name": "",
+      "selected_by": 1,
+      "rules": [
+        "中期趋势延续"
+      ],
+      "price": 2.841,
+      "change_pct": 2.415284787310749
+    },
+    {
+      "code": "163208",
+      "name": "",
+      "selected_by": 1,
+      "rules": [
+        "中期趋势延续"
+      ],
+      "price": 1.376,
+      "change_pct": 2.001482579688652
+    },
+    {
+      "code": "161118",
+      "name": "",
+      "selected_by": 1,
+      "rules": [
+        "中期趋势延续"
+      ],
+      "price": 1.478,
+      "change_pct": 1.7906336088154289
+    },
+    {
+      "code": "160527",
+      "name": "",
+      "selected_by": 1,
+      "rules": [
+        "中期趋势延续"
+      ],
+      "price": 0.997,
+      "change_pct": 1.6309887869520912
+    },
+    {
+      "code": "513350",
+      "name": "",
+      "selected_by": 1,
+      "rules": [
+        "中期趋势延续"
+      ],
+      "price": 1.66,
+      "change_pct": 1.5911872705018375
+    }
+  ]
+}

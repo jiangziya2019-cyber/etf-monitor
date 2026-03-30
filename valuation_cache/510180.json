@@ -1,0 +1,13 @@
+{
+  "etf_code": "510180",
+  "index_name": "\u4e0a\u8bc1 180",
+  "pe": null,
+  "pe_percentile": 42.0,
+  "pb": null,
+  "pb_percentile": 37.800000000000004,
+  "dividend_yield": 4.5,
+  "trade_date": "20260328",
+  "update_time": "2026-03-28T13:45:56.421691",
+  "data_source": "sector_median_estimate",
+  "cache_hit": false
+}

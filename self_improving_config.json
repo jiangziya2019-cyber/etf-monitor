@@ -1,0 +1,38 @@
+{
+  "enabled": true,
+  "auto_trigger": true,
+  "memory_paths": {
+    "semantic": "/home/admin/openclaw/workspace/memory/semantic/",
+    "episodic": "/home/admin/openclaw/workspace/memory/episodic/",
+    "working": "/home/admin/openclaw/workspace/memory/working/"
+  },
+  "hooks": {
+    "after_skill_use": {
+      "enabled": true,
+      "action": "record_experience",
+      "template": "skill_experience"
+    },
+    "after_error": {
+      "enabled": true,
+      "action": "analyze_error",
+      "template": "error_analysis"
+    },
+    "session_end": {
+      "enabled": true,
+      "action": "summarize_session",
+      "template": "session_summary"
+    }
+  },
+  "learning_rules": {
+    "record_success": true,
+    "record_failure": true,
+    "extract_patterns": true,
+    "update_semantic": true,
+    "confidence_threshold": 0.7
+  },
+  "auto_optimize": {
+    "trigger_params": true,
+    "update_thresholds": true,
+    "refine_scoring": true
+  }
+}

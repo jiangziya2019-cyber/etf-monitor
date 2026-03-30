@@ -1,0 +1,23 @@
+{"op":"create","entity":{"id":"person_boss","type":"Person","properties":{"name":"老板","timezone":"Asia/Shanghai","role":"投资者","focus":"场内 ETF 投资"}}}
+{"op":"create","entity":{"id":"assistant_jin","type":"Person","properties":{"name":"金助手","role":"金融投资分析助手","specialty":"ETF 分析"}}}
+{"op":"create","entity":{"id":"proj_etf_investment","type":"Project","properties":{"name":"ETF 投资管理系统","status":"active","goal":"专业 ETF 分析与自动监控"}}}
+{"op":"create","entity":{"id":"task_trigger_v2","type":"Task","properties":{"title":"智能触发器 v2.0 实施","status":"completed","priority":"high","due":"2026-03-27"}}}
+{"op":"create","entity":{"id":"task_mx_skills","type":"Task","properties":{"title":"东方财富妙想 Skills 安装","status":"completed","priority":"high","due":"2026-03-27"}}}
+{"op":"create","entity":{"id":"task_memory_enhance","type":"Task","properties":{"title":"记忆增强双系统启用","status":"in_progress","priority":"high","due":"2026-03-27"}}}
+{"op":"create","entity":{"id":"event_rebalancing_20260327","type":"Event","properties":{"title":"ETF 调仓执行","date":"2026-03-27","status":"pending","details":"清仓机器人 AI/军工 ETF、减仓黄金 20%/原油 30%、加仓纳指/创业板 50/半导体"}}}
+{"op":"create","entity":{"id":"event_trigger_deploy","type":"Event","properties":{"title":"智能触发器 v2.0 部署","date":"2026-03-27 14:15","status":"completed","result":"成功启用，15 分钟自动监控"}}}
+{"op":"create","entity":{"id":"doc_trigger_v2_report","type":"Document","properties":{"title":"智能触发器 v2.0 最终报告","path":"smart_trigger_v2_final_report.md","summary":"五维评分 + 动态档位 + 智能仓位"}}}
+{"op":"create","entity":{"id":"doc_mx_install","type":"Document","properties":{"title":"东方财富妙想 Skills 安装报告","path":"对话记录","summary":"5 个技能已安装：data/search/select-stock/selfselect/simulator"}}}
+{"op":"create","entity":{"id":"note_investment_rules","type":"Note","properties":{"content":"投资原则：数据真实、分析专业、不编造不敷衍、做不到要坦诚","tags":["投资原则","底线"]}}}
+{"op":"create","entity":{"id":"note_trigger_config","type":"Note","properties":{"content":"触发器配置：频率 15 分钟、阈值 60 分、五维评分 (价格 30%/成交量 25%/行业 20%/技术 15%/市场 10%)","tags":["触发器","配置"]}}}
+{"op":"relate","from":"person_boss","rel":"owns","to":"proj_etf_investment"}
+{"op":"relate","from":"assistant_jin","rel":"assists","to":"person_boss"}
+{"op":"relate","from":"task_trigger_v2","rel":"part_of","to":"proj_etf_investment"}
+{"op":"relate","from":"task_mx_skills","rel":"part_of","to":"proj_etf_investment"}
+{"op":"relate","from":"task_memory_enhance","rel":"part_of","to":"proj_etf_investment"}
+{"op":"relate","from":"event_rebalancing_20260327","rel":"related_to","to":"proj_etf_investment"}
+{"op":"relate","from":"event_trigger_deploy","rel":"completes","to":"task_trigger_v2"}
+{"op":"relate","from":"doc_trigger_v2_report","rel":"documents","to":"task_trigger_v2"}
+{"op":"relate","from":"doc_mx_install","rel":"documents","to":"task_mx_skills"}
+{"op":"relate","from":"note_investment_rules","rel":"guides","to":"person_boss"}
+{"op":"relate","from":"note_trigger_config","rel":"configures","to":"task_trigger_v2"}

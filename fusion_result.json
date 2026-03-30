@@ -1,0 +1,148 @@
+{
+  "timestamp": "2026-03-29T15:20:24.346259",
+  "results": {
+    "513500": {
+      "composite": 0.6301251346495667,
+      "sector_factor": 0.0,
+      "volatility_factor": 1.0,
+      "momentum_factor": 0.49593330622204157,
+      "value_factor": 0.7307090404702816,
+      "macro_factor": 0.6,
+      "type": "宽基"
+    },
+    "513110": {
+      "composite": 0.5673129066649607,
+      "sector_factor": 0.0,
+      "volatility_factor": 0.9781358989359115,
+      "momentum_factor": 0.5492726419521355,
+      "value_factor": 0.3827698824807665,
+      "macro_factor": 0.6,
+      "type": "宽基"
+    },
+    "159915": {
+      "composite": 0.5532828176149225,
+      "sector_factor": 0.0,
+      "volatility_factor": 0.7934658824447248,
+      "momentum_factor": 0.422322775263952,
+      "value_factor": 0.7483117953275851,
+      "macro_factor": 0.6,
+      "type": "宽基"
+    },
+    "510300": {
+      "composite": 0.5392082462556085,
+      "sector_factor": 0.0,
+      "volatility_factor": 0.8977737026509474,
+      "momentum_factor": 0.5158662999788445,
+      "value_factor": 0.4045478023280664,
+      "macro_factor": 0.6,
+      "type": "宽基"
+    },
+    "515790": {
+      "composite": 0.5343962790552803,
+      "sector_factor": 0.3,
+      "volatility_factor": 0.7344019273351128,
+      "momentum_factor": 0.2778827977315688,
+      "value_factor": 0.5980250071092714,
+      "macro_factor": 0.5,
+      "type": "行业"
+    },
+    "510880": {
+      "composite": 0.5333093056817232,
+      "sector_factor": 0.325,
+      "volatility_factor": 0.7286765819268477,
+      "momentum_factor": 0.5714982125446867,
+      "value_factor": 0.20290888983748578,
+      "macro_factor": 0.5,
+      "type": "行业"
+    },
+    "160723": {
+      "composite": 0.5304254034488857,
+      "sector_factor": 0.3,
+      "volatility_factor": 0.8584173330474205,
+      "momentum_factor": 0.40138787436084716,
+      "value_factor": 0.2377661747222385,
+      "macro_factor": 0.5,
+      "type": "行业"
+    },
+    "512010": {
+      "composite": 0.5162481635641504,
+      "sector_factor": 0.25,
+      "volatility_factor": 0.7944077210167739,
+      "momentum_factor": 0.47422680412371143,
+      "value_factor": 0.23434573114095125,
+      "macro_factor": 0.5,
+      "type": "行业"
+    },
+    "159663": {
+      "composite": 0.5078187282799814,
+      "sector_factor": 0.425,
+      "volatility_factor": 0.6944017978685095,
+      "momentum_factor": 0.13479977439368307,
+      "value_factor": 0.547741226605039,
+      "macro_factor": 0.5,
+      "type": "行业"
+    },
+    "512480": {
+      "composite": 0.5075221226165799,
+      "sector_factor": 0.55,
+      "volatility_factor": 0.5175523363485839,
+      "momentum_factor": 0.12103746397694497,
+      "value_factor": 0.6724852785888422,
+      "macro_factor": 0.5,
+      "type": "行业"
+    },
+    "512200": {
+      "composite": 0.48768699278905164,
+      "sector_factor": 0.15,
+      "volatility_factor": 0.8284771299439426,
+      "momentum_factor": 0.35696122059758456,
+      "value_factor": 0.31201774328236354,
+      "macro_factor": 0.5,
+      "type": "行业"
+    },
+    "518880": {
+      "composite": 0.48563984290435025,
+      "sector_factor": 0.0,
+      "volatility_factor": 0.7736542553438689,
+      "momentum_factor": 0.33101247461560773,
+      "value_factor": 0.6039522382364384,
+      "macro_factor": 0.5,
+      "type": "行业"
+    },
+    "510500": {
+      "composite": 0.45672301548844196,
+      "sector_factor": 0.0,
+      "volatility_factor": 0.8316850595669605,
+      "momentum_factor": 0.2051009564293306,
+      "value_factor": 0.4797112925551058,
+      "macro_factor": 0.6,
+      "type": "宽基"
+    },
+    "515030": {
+      "composite": 0.445090149139278,
+      "sector_factor": 0.15,
+      "volatility_factor": 0.7369129727427419,
+      "momentum_factor": 0.3842351716961499,
+      "value_factor": 0.20228732196208998,
+      "macro_factor": 0.5,
+      "type": "行业"
+    },
+    "159937": {
+      "composite": 0.4257166034594496,
+      "sector_factor": 0.0,
+      "volatility_factor": 0.7683920358318317,
+      "momentum_factor": 0.331136738056013,
+      "value_factor": 0.31207404097948455,
+      "macro_factor": 0.5,
+      "type": "行业"
+    }
+  },
+  "macro": {
+    "cpi": 0.2,
+    "pmi": 49.3,
+    "treasury_short": 3.35,
+    "treasury_long": 4.54,
+    "treasury_spread": 1.19,
+    "meilin_cycle": "过渡期"
+  }
+}

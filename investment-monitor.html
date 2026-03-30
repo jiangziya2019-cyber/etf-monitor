@@ -51,7 +51,21 @@
         .status-completed { background: #00ff88; }
         .status-cancelled { background: #ff4757; }
         .update-time { text-align: center; color: rgba(255,255,255,0.5); font-size: 12px; margin-top: 20px; }
-        @media (max-width: 768px) { .charts-grid, .metrics-grid { grid-template-columns: 1fr; } .holdings-table { font-size: 12px; } h1 { font-size: 22px; } .metric-value { font-size: 24px; } }
+        .etf-row { cursor: pointer; transition: all 0.3s; }
+        .etf-row:hover { background: rgba(0,210,255,0.1) !important; transform: translateX(5px); }
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; justify-content: center; align-items: center; }
+        .modal.active { display: flex; }
+        .modal-content { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 20px; padding: 30px; max-width: 900px; width: 90%; max-height: 90vh; overflow-y: auto; border: 1px solid rgba(0,210,255,0.3); box-shadow: 0 20px 60px rgba(0,210,255,0.2); }
+        .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 2px solid rgba(255,255,255,0.1); }
+        .modal-header h2 { color: #00d2ff; font-size: 24px; }
+        .modal-close { background: none; border: none; color: #fff; font-size: 28px; cursor: pointer; padding: 0 10px; transition: all 0.3s; }
+        .modal-close:hover { color: #ff4757; transform: rotate(90deg); }
+        .modal-body { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .modal-chart { height: 300px; }
+        .time-range { display: flex; gap: 10px; margin-bottom: 15px; }
+        .time-range button { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #fff; padding: 8px 16px; border-radius: 8px; cursor: pointer; transition: all 0.3s; }
+        .time-range button.active, .time-range button:hover { background: #00d2ff; border-color: #00d2ff; }
+        @media (max-width: 768px) { .charts-grid, .metrics-grid { grid-template-columns: 1fr; } .holdings-table { font-size: 12px; } h1 { font-size: 22px; } .metric-value { font-size: 24px; } .modal-content { padding: 20px; } }
     </style>
 </head>
 <body>
@@ -69,13 +83,37 @@
         <div class="charts-grid">
             <div class="chart-card"><h3>📊 四层仓位分布</h3><div id="positionChart" class="chart-container"></div></div>
             <div class="chart-card"><h3>📈 持仓盈亏分布</h3><div id="profitChart" class="chart-container"></div></div>
+            <div class="chart-card"><h3>💰 收益曲线 vs 沪深 300</h3><div id="returnsChart" class="chart-container"></div></div>
+            <div class="chart-card"><h3>📊 持仓历史趋势</h3><div id="holdingsTrendChart" class="chart-container"></div></div>
         </div>
         <div class="holdings-section">
-            <h3>📈 持仓明细</h3>
+            <h3>📈 持仓明细 (点击查看详情)</h3>
             <table class="holdings-table">
                 <thead><tr><th>名称</th><th>当前价</th><th>盈亏</th><th>盈亏%</th><th>市值</th></tr></thead>
                 <tbody id="holdingsTable"></tbody>
             </table>
+        </div>
+        <div id="etfModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modalTitle">📊 ETF 详情</h2>
+                    <button class="modal-close" onclick="closeModal()">×</button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="time-range">
+                            <button onclick="setTimeRange(7)" class="active">7 天</button>
+                            <button onclick="setTimeRange(30)">30 天</button>
+                            <button onclick="setTimeRange(90)">全部</button>
+                        </div>
+                        <div id="etfHoldingsChart" class="modal-chart"></div>
+                    </div>
+                    <div>
+                        <h3 style="color:#00d2ff;margin-bottom:15px;">📊 持仓统计</h3>
+                        <div id="etfStats" style="color:#fff;"></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="triggers-section"><h3>🔔 触发器监控</h3><div id="triggersList"></div></div>
         <div class="plan-section">
@@ -88,10 +126,58 @@
     </div>
     <script>
         let holdingsData = null;
-        async function loadHoldings() { try { const r = await fetch('holdings_current.json'); holdingsData = await r.json(); updateUI(); initCharts(); } catch(e) { loadSampleData(); } }
+        let returnsData = null, holdingsHistory = null, currentETF = null, currentTimeRange = 30, etfChart = null;
+        async function loadHoldings() { try { const r = await fetch('holdings_current.json'); holdingsData = await r.json(); await loadHistoryData(); updateUI(); initCharts(); } catch(e) { loadSampleData(); } }
+        async function loadHistoryData() { try { const r1 = await fetch('returns_history.json'); returnsData = await r1.json(); const r2 = await fetch('holdings_history.json'); holdingsHistory = await r2.json(); const r3 = await fetch('transactions.json'); transactionsData = await r3.json(); } catch(e) { console.log('历史数据加载失败'); } }
         function loadSampleData() { holdingsData = { total_market_value: 162796.5, total_profit: 664.14, yield_rate: 0.41, etf_count: 19, etfs: [{name:'红利 ETF',price:3.284,profit:56,yield:0.46,market_value:12536},{name:'半导体',price:1.567,profit:-349,yield:-6.38,market_value:5134},{name:'储能电池',price:2.149,profit:508,yield:3.82,market_value:13832},{name:'黄金 9999',price:10.671,profit:-1816,yield:-11.86,market_value:13493},{name:'300ETF',price:4.592,profit:-274,yield:-2.0,market_value:13500}] }; updateUI(); initCharts(); }
-        function updateUI() { if(!holdingsData) return; document.getElementById('totalValue').textContent='¥'+Math.round(holdingsData.total_market_value).toLocaleString(); const p=document.getElementById('totalProfit'); p.textContent=(holdingsData.total_profit>=0?'+':'')+'¥'+Math.round(holdingsData.total_profit).toLocaleString(); p.className='metric-value '+(holdingsData.total_profit>=0?'profit-positive':'profit-negative'); const y=document.getElementById('yieldRate'); y.textContent=(holdingsData.yield_rate>=0?'+':'')+holdingsData.yield_rate.toFixed(2)+'%'; y.className='metric-value '+(holdingsData.yield_rate>=0?'profit-positive':'profit-negative'); document.getElementById('etfCount').textContent=holdingsData.etf_count+'只'; document.getElementById('holdingsTable').innerHTML=holdingsData.etfs.map(e=>'<tr><td>'+e.name+'</td><td>'+e.price+'</td><td class="'+(e.profit>=0?'profit-positive':'profit-negative')+'">'+(e.profit>=0?'+':'')+'¥'+Math.round(e.profit)+'</td><td class="'+(e.yield>=0?'profit-positive':'profit-negative')+'">'+(e.yield>=0?'+':'')+e.yield.toFixed(2)+'%</td><td>¥'+Math.round(e.market_value).toLocaleString()+'</td></tr>').join(''); const t=holdingsData.etfs.filter(e=>Math.abs(e.yield)>5); document.getElementById('triggersList').innerHTML=t.length>0?t.map(e=>'<div class="trigger-item"><div class="trigger-icon">'+(e.yield<-10?'🛑':e.yield<-5?'⚠️':'🔴')+'</div><div class="trigger-info"><h4>'+(e.yield<-10?'止损触发':e.yield>5?'止盈触发':'关注')+' - '+e.name+'</h4><p>当前价：'+e.price+' | 盈亏：'+(e.profit>=0?'+':'')+e.yield.toFixed(2)+'%</p></div></div>').join(''):'<div style="color:rgba(255,255,255,0.5);text-align:center;">✅ 无触发信号</div>'; document.getElementById('lastUpdate').textContent=new Date().toLocaleString('zh-CN'); }
-        function initCharts() { if(!holdingsData) return; const pc=echarts.init(document.getElementById('positionChart')); pc.setOption({tooltip:{trigger:'item'},series:[{type:'pie',radius:['40%','70%'],data:[{value:20.3,name:'防守层',itemStyle:{color:'#00d2ff'}},{value:39.3,name:'未来层',itemStyle:{color:'#3a7bd5'}},{value:13.3,name:'获利层',itemStyle:{color:'#00ff88'}},{value:14.4,name:'全球层',itemStyle:{color:'#ffa502'}},{value:12.7,name:'现金层',itemStyle:{color:'#ff4757'}}],label:{color:'#fff'}}]}); const prc=echarts.init(document.getElementById('profitChart')); const pos=holdingsData.etfs.filter(e=>e.profit>0).length; const neg=holdingsData.etfs.filter(e=>e.profit<=0).length; prc.setOption({tooltip:{trigger:'axis'},series:[{type:'bar',data:[{value:pos,name:'盈利',itemStyle:{color:'#00ff88'}},{value:neg,name:'亏损',itemStyle:{color:'#ff4757'}}],label:{show:true,position:'top',color:'#fff',formatter:'{c}只'}}]}); }
+        function openModal(etfName) { currentETF = etfName; document.getElementById('etfModal').classList.add('active'); document.getElementById('modalTitle').textContent = '📊 ' + etfName + ' 详情'; updateETFChart(); }
+        function closeModal() { document.getElementById('etfModal').classList.remove('active'); }
+        function setTimeRange(days) { currentTimeRange = days; document.querySelectorAll('.time-range button').forEach(b => b.classList.remove('active')); event.target.classList.add('active'); updateETFChart(); }
+        function updateETFChart() {
+            if(!holdingsHistory || !currentETF) return;
+            let filtered = holdingsHistory.records;
+            if(currentTimeRange === 7) filtered = filtered.slice(-7);
+            else if(currentTimeRange === 30) filtered = filtered.slice(-30);
+            const dates = filtered.map(r => r.date.slice(5));
+            const etfData = filtered.map(r => { const etf = r.etfs.find(e => e.name === currentETF); return etf ? etf.market_value / 1000 : null; });
+            const prices = filtered.map(r => { const etf = r.etfs.find(e => e.name === currentETF); return etf ? etf.price : null; });
+            if(etfChart) etfChart.dispose();
+            etfChart = echarts.init(document.getElementById('etfHoldingsChart'));
+            etfChart.setOption({tooltip:{trigger:'axis'},legend:{data:['持仓市值','价格'],textStyle:{color:'#fff'}},xAxis:{type:'category',data:dates,axisLine:{lineStyle:{color:'#fff'}}},yAxis:[{type:'value',name:'市值 (千)',axisLine:{lineStyle:{color:'#00d2ff'}},splitLine:{lineStyle:{color:'rgba(255,255,255,0.1)'}}},{type:'value',name:'价格',axisLine:{lineStyle:{color:'#ff4757'}},splitLine:{show:false}}],series:[{name:'持仓市值',type:'line',smooth:true,data:etfData,itemStyle:{color:'#00d2ff'},areaStyle:{color:'rgba(0,210,255,0.3}},{name:'价格',type:'line',smooth:true,yAxisIndex:1,data:prices,itemStyle:{color:'#ff4757'}}]});
+            const current = holdingsData.etfs.find(e => e.name === currentETF);
+            if(current) {
+                document.getElementById('etfStats').innerHTML = '<div style="margin-bottom:10px;"><span style="color:rgba(255,255,255,0.6);">当前价：</span><span style="color:#fff;font-size:18px;">' + current.price + '</span></div><div style="margin-bottom:10px;"><span style="color:rgba(255,255,255,0.6);">盈亏：</span><span class="' + (current.profit >= 0 ? 'profit-positive' : 'profit-negative') + '">' + (current.profit >= 0 ? '+' : '') + '¥' + Math.round(current.profit) + '</span></div><div style="margin-bottom:10px;"><span style="color:rgba(255,255,255,0.6);">盈亏%：</span><span class="' + (current.yield >= 0 ? 'profit-positive' : 'profit-negative') + '">' + (current.yield >= 0 ? '+' : '') + current.yield.toFixed(2) + '%</span></div><div><span style="color:rgba(255,255,255,0.6);">市值：</span><span style="color:#fff;">¥' + Math.round(current.market_value).toLocaleString() + '</span></div>';
+            }
+        }
+        function updateUI() { if(!holdingsData) return; document.getElementById('totalValue').textContent='¥'+Math.round(holdingsData.total_market_value).toLocaleString(); const p=document.getElementById('totalProfit'); p.textContent=(holdingsData.total_profit>=0?'+':'')+'¥'+Math.round(holdingsData.total_profit).toLocaleString(); p.className='metric-value '+(holdingsData.total_profit>=0?'profit-positive':'profit-negative'); const y=document.getElementById('yieldRate'); y.textContent=(holdingsData.yield_rate>=0?'+':'')+holdingsData.yield_rate.toFixed(2)+'%'; y.className='metric-value '+(holdingsData.yield_rate>=0?'profit-positive':'profit-negative'); document.getElementById('etfCount').textContent=holdingsData.etf_count+'只'; document.getElementById('holdingsTable').innerHTML=holdingsData.etfs.map(e=>'<tr class="etf-row" onclick="openModal(\''+e.name+'\')"><td>'+e.name+'</td><td>'+e.price+'</td><td class="'+(e.profit>=0?'profit-positive':'profit-negative')+'">'+(e.profit>=0?'+':'')+'¥'+Math.round(e.profit)+'</td><td class="'+(e.yield>=0?'profit-positive':'profit-negative')+'">'+(e.yield>=0?'+':'')+e.yield.toFixed(2)+'%</td><td>¥'+Math.round(e.market_value).toLocaleString()+'</td></tr>').join(''); const t=holdingsData.etfs.filter(e=>Math.abs(e.yield)>5); document.getElementById('triggersList').innerHTML=t.length>0?t.map(e=>'<div class="trigger-item"><div class="trigger-icon">'+(e.yield<-10?'🛑':e.yield<-5?'⚠️':'🔴')+'</div><div class="trigger-info"><h4>'+(e.yield<-10?'止损触发':e.yield>5?'止盈触发':'关注')+' - '+e.name+'</h4><p>当前价：'+e.price+' | 盈亏：'+(e.profit>=0?'+':'')+e.yield.toFixed(2)+'%</p></div></div>').join(''):'<div style="color:rgba(255,255,255,0.5);text-align:center;">✅ 无触发信号</div>'; document.getElementById('lastUpdate').textContent=new Date().toLocaleString('zh-CN'); }
+        function initCharts() {
+            if(!holdingsData) return;
+            // 四层仓位图
+            const pc=echarts.init(document.getElementById('positionChart'));
+            pc.setOption({tooltip:{trigger:'item'},series:[{type:'pie',radius:['40%','70%'],data:[{value:20.3,name:'防守层',itemStyle:{color:'#00d2ff'}},{value:39.3,name:'未来层',itemStyle:{color:'#3a7bd5'}},{value:13.3,name:'获利层',itemStyle:{color:'#00ff88'}},{value:14.4,name:'全球层',itemStyle:{color:'#ffa502'}},{value:12.7,name:'现金层',itemStyle:{color:'#ff4757'}}],label:{color:'#fff'}}]});
+            // 盈亏分布图 (A 股习惯：红涨绿跌)
+            const prc=echarts.init(document.getElementById('profitChart'));
+            const pos=holdingsData.etfs.filter(e=>e.profit>0).length;
+            const neg=holdingsData.etfs.filter(e=>e.profit<=0).length;
+            prc.setOption({tooltip:{trigger:'axis'},series:[{type:'bar',data:[{value:pos,name:'盈利',itemStyle:{color:'#ff4757'}},{value:neg,name:'亏损',itemStyle:{color:'#00ff88'}}],label:{show:true,position:'top',color:'#fff',formatter:'{c}只'}}]});
+            // 收益曲线图 (A 股习惯：红涨绿跌)
+            if(returnsData) {
+                const rc=echarts.init(document.getElementById('returnsChart'));
+                const dates=returnsData.records.map(r=>r.date.slice(5));
+                const cumReturns=returnsData.records.map(r=>r.cumulative_return);
+                const benchReturns=returnsData.records.map(r=>((r.benchmark_value-4000)/4000)*100);
+                const isPositive = cumReturns[cumReturns.length-1] >= 0;
+                rc.setOption({tooltip:{trigger:'axis'},legend:{data:['我的收益','沪深 300'],textStyle:{color:'#fff'}},xAxis:{type:'category',data:dates,axisLine:{lineStyle:{color:'#fff'}}},yAxis:{type:'value',axisLine:{lineStyle:{color:'#fff'}},splitLine:{lineStyle:{color:'rgba(255,255,255,0.1)'}}},series:[{name:'我的收益',type:'line',smooth:true,data:cumReturns,itemStyle:{color: isPositive ? '#ff4757' : '#00ff88'},areaStyle:{color: isPositive ? 'rgba(255,71,87,0.3)' : 'rgba(0,255,136,0.2)'}},{name:'沪深 300',type:'line',smooth:true,data:benchReturns,itemStyle:{color:'#ffa502'},areaStyle:{color:'rgba(255,165,2,0.2)'}}]});
+            }
+            // 持仓趋势图
+            if(holdingsHistory) {
+                const hc=echarts.init(document.getElementById('holdingsTrendChart'));
+                const hDates=holdingsHistory.records.map(r=>r.date.slice(5));
+                const hValues=holdingsHistory.records.map(r=>r.total_value/1000);
+                const hProfits=holdingsHistory.records.map(r=>r.total_profit/100);
+                hc.setOption({tooltip:{trigger:'axis'},legend:{data:['总市值','总盈亏'],textStyle:{color:'#fff'}},xAxis:{type:'category',data:hDates,axisLine:{lineStyle:{color:'#fff'}}},yAxis:{type:'value',axisLine:{lineStyle:{color:'#fff'}},splitLine:{lineStyle:{color:'rgba(255,255,255,0.1)'}}},series:[{name:'总市值',type:'line',smooth:true,data:hValues,itemStyle:{color:'#00ff88'}},{name:'总盈亏',type:'line',smooth:true,data:hProfits,itemStyle:{color:'#ffa502'}}]});
+            }
+        }
         function refreshData() { loadHoldings(); alert('🔄 数据已刷新！'); }
         loadHoldings(); setInterval(loadHoldings, 900000);
     </script>

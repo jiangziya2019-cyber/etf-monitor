@@ -1,0 +1,277 @@
+{
+  "description": "收益历史记录 - 每日收益数据",
+  "created": "2026-03-30T22:24:08.107712",
+  "benchmark": "沪深 300",
+  "records": [
+    {
+      "date": "2026-02-28",
+      "portfolio_value": 153179.67,
+      "daily_return": 2.12,
+      "cumulative_return": 2.12,
+      "benchmark_value": 4077.43,
+      "benchmark_return": 1.94,
+      "outperformance": 0.18
+    },
+    {
+      "date": "2026-03-01",
+      "portfolio_value": 149402.6,
+      "daily_return": -2.47,
+      "cumulative_return": -0.4,
+      "benchmark_value": 3893.35,
+      "benchmark_return": -2.67,
+      "outperformance": 0.2
+    },
+    {
+      "date": "2026-03-02",
+      "portfolio_value": 151731.57,
+      "daily_return": 1.56,
+      "cumulative_return": 1.15,
+      "benchmark_value": 4055.6,
+      "benchmark_return": 1.39,
+      "outperformance": 0.17
+    },
+    {
+      "date": "2026-03-03",
+      "portfolio_value": 153376.43,
+      "daily_return": 1.08,
+      "cumulative_return": 2.25,
+      "benchmark_value": 4067.38,
+      "benchmark_return": 1.68,
+      "outperformance": -0.6
+    },
+    {
+      "date": "2026-03-04",
+      "portfolio_value": 150331.73,
+      "daily_return": -1.99,
+      "cumulative_return": 0.22,
+      "benchmark_value": 3950.15,
+      "benchmark_return": -1.25,
+      "outperformance": -0.74
+    },
+    {
+      "date": "2026-03-05",
+      "portfolio_value": 148458.82,
+      "daily_return": -1.25,
+      "cumulative_return": -1.03,
+      "benchmark_value": 3950.17,
+      "benchmark_return": -1.25,
+      "outperformance": -0.0
+    },
+    {
+      "date": "2026-03-06",
+      "portfolio_value": 148892.56,
+      "daily_return": 0.29,
+      "cumulative_return": -0.74,
+      "benchmark_value": 3968.95,
+      "benchmark_return": -0.78,
+      "outperformance": 1.07
+    },
+    {
+      "date": "2026-03-07",
+      "portfolio_value": 151842.34,
+      "daily_return": 1.98,
+      "cumulative_return": 1.23,
+      "benchmark_value": 4044.24,
+      "benchmark_return": 1.11,
+      "outperformance": 0.88
+    },
+    {
+      "date": "2026-03-08",
+      "portfolio_value": 148866.18,
+      "daily_return": -1.96,
+      "cumulative_return": -0.76,
+      "benchmark_value": 3934.64,
+      "benchmark_return": -1.63,
+      "outperformance": -0.33
+    },
+    {
+      "date": "2026-03-09",
+      "portfolio_value": 150883.09,
+      "daily_return": 1.35,
+      "cumulative_return": 0.59,
+      "benchmark_value": 4054.98,
+      "benchmark_return": 1.37,
+      "outperformance": -0.02
+    },
+    {
+      "date": "2026-03-10",
+      "portfolio_value": 151082.6,
+      "daily_return": 0.13,
+      "cumulative_return": 0.72,
+      "benchmark_value": 3972.34,
+      "benchmark_return": -0.69,
+      "outperformance": 0.82
+    },
+    {
+      "date": "2026-03-11",
+      "portfolio_value": 146971.25,
+      "daily_return": -2.72,
+      "cumulative_return": -2.02,
+      "benchmark_value": 3933.81,
+      "benchmark_return": -1.65,
+      "outperformance": -1.07
+    },
+    {
+      "date": "2026-03-12",
+      "portfolio_value": 144677.92,
+      "daily_return": -1.56,
+      "cumulative_return": -3.55,
+      "benchmark_value": 3945.0,
+      "benchmark_return": -1.37,
+      "outperformance": -0.19
+    },
+    {
+      "date": "2026-03-13",
+      "portfolio_value": 148016.53,
+      "daily_return": 2.31,
+      "cumulative_return": -1.32,
+      "benchmark_value": 4061.92,
+      "benchmark_return": 1.55,
+      "outperformance": 0.76
+    },
+    {
+      "date": "2026-03-14",
+      "portfolio_value": 147820.12,
+      "daily_return": -0.13,
+      "cumulative_return": -1.45,
+      "benchmark_value": 3979.25,
+      "benchmark_return": -0.52,
+      "outperformance": 0.39
+    },
+    {
+      "date": "2026-03-15",
+      "portfolio_value": 144199.48,
+      "daily_return": -2.45,
+      "cumulative_return": -3.87,
+      "benchmark_value": 3906.36,
+      "benchmark_return": -2.34,
+      "outperformance": -0.11
+    },
+    {
+      "date": "2026-03-16",
+      "portfolio_value": 144276.24,
+      "daily_return": 0.05,
+      "cumulative_return": -3.82,
+      "benchmark_value": 4041.1,
+      "benchmark_return": 1.03,
+      "outperformance": -0.97
+    },
+    {
+      "date": "2026-03-17",
+      "portfolio_value": 144272.64,
+      "daily_return": -0.0,
+      "cumulative_return": -3.82,
+      "benchmark_value": 3996.4,
+      "benchmark_return": -0.09,
+      "outperformance": 0.09
+    },
+    {
+      "date": "2026-03-18",
+      "portfolio_value": 144415.36,
+      "daily_return": 0.1,
+      "cumulative_return": -3.72,
+      "benchmark_value": 3972.08,
+      "benchmark_return": -0.7,
+      "outperformance": 0.8
+    },
+    {
+      "date": "2026-03-19",
+      "portfolio_value": 143959.45,
+      "daily_return": -0.32,
+      "cumulative_return": -4.03,
+      "benchmark_value": 4005.43,
+      "benchmark_return": 0.14,
+      "outperformance": -0.45
+    },
+    {
+      "date": "2026-03-20",
+      "portfolio_value": 144078.91,
+      "daily_return": 0.08,
+      "cumulative_return": -3.95,
+      "benchmark_value": 3977.41,
+      "benchmark_return": -0.56,
+      "outperformance": 0.65
+    },
+    {
+      "date": "2026-03-21",
+      "portfolio_value": 140779.67,
+      "daily_return": -2.29,
+      "cumulative_return": -6.15,
+      "benchmark_value": 3927.05,
+      "benchmark_return": -1.82,
+      "outperformance": -0.47
+    },
+    {
+      "date": "2026-03-22",
+      "portfolio_value": 140718.25,
+      "daily_return": -0.04,
+      "cumulative_return": -6.19,
+      "benchmark_value": 3971.41,
+      "benchmark_return": -0.71,
+      "outperformance": 0.67
+    },
+    {
+      "date": "2026-03-23",
+      "portfolio_value": 140581.32,
+      "daily_return": -0.1,
+      "cumulative_return": -6.28,
+      "benchmark_value": 3964.8,
+      "benchmark_return": -0.88,
+      "outperformance": 0.78
+    },
+    {
+      "date": "2026-03-24",
+      "portfolio_value": 139226.95,
+      "daily_return": -0.96,
+      "cumulative_return": -7.18,
+      "benchmark_value": 3981.37,
+      "benchmark_return": -0.47,
+      "outperformance": -0.5
+    },
+    {
+      "date": "2026-03-25",
+      "portfolio_value": 136764.83,
+      "daily_return": -1.77,
+      "cumulative_return": -8.82,
+      "benchmark_value": 3938.42,
+      "benchmark_return": -1.54,
+      "outperformance": -0.23
+    },
+    {
+      "date": "2026-03-26",
+      "portfolio_value": 137169.17,
+      "daily_return": 0.3,
+      "cumulative_return": -8.55,
+      "benchmark_value": 3999.45,
+      "benchmark_return": -0.01,
+      "outperformance": 0.31
+    },
+    {
+      "date": "2026-03-27",
+      "portfolio_value": 134483.93,
+      "daily_return": -1.96,
+      "cumulative_return": -10.34,
+      "benchmark_value": 3976.94,
+      "benchmark_return": -0.58,
+      "outperformance": -1.38
+    },
+    {
+      "date": "2026-03-28",
+      "portfolio_value": 137106.33,
+      "daily_return": 1.95,
+      "cumulative_return": -8.6,
+      "benchmark_value": 4084.0,
+      "benchmark_return": 2.1,
+      "outperformance": -0.15
+    },
+    {
+      "date": "2026-03-29",
+      "portfolio_value": 136487.57,
+      "daily_return": -0.45,
+      "cumulative_return": -9.01,
+      "benchmark_value": 3993.13,
+      "benchmark_return": -0.17,
+      "outperformance": -0.28
+    }
+  ]
+}

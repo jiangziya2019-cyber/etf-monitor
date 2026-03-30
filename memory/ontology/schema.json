@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "created": "2026-03-27T14:45:00+08:00",
+  "types": {
+    "Person": {
+      "properties": ["name", "email?", "phone?", "timezone?", "role?", "focus?", "notes?"],
+      "description": "人员实体（老板、助手、相关人员）"
+    },
+    "Project": {
+      "properties": ["name", "status", "goals[]", "owner?", "start_date?", "end_date?"],
+      "description": "项目实体（投资管理系统、技能开发等）"
+    },
+    "Task": {
+      "properties": ["title", "status", "due?", "priority?", "assignee?", "blockers[]", "completed_date?"],
+      "description": "任务实体（待执行事项）"
+    },
+    "Event": {
+      "properties": ["title", "date", "time?", "status", "details", "participants[]", "outcome?"],
+      "description": "事件实体（调仓、部署、会议等）"
+    },
+    "Document": {
+      "properties": ["title", "path?", "url?", "summary?", "type?", "created?"],
+      "description": "文档实体（报告、配置、指南）"
+    },
+    "Note": {
+      "properties": ["content", "tags[]", "refs[]", "importance?"],
+      "description": "笔记实体（规则、配置、临时记录）"
+    },
+    "ETF": {
+      "properties": ["code", "name", "type?", "sector?", "weight?", "cost?", "current_price?"],
+      "description": "ETF 持仓实体"
+    },
+    "TradingStrategy": {
+      "properties": ["name", "rules[]", "parameters{}", "performance?"],
+      "description": "交易策略实体"
+    }
+  },
+  "relations": {
+    "owns": {"from": "Person", "to": "Project", "description": "拥有项目"},
+    "assists": {"from": "Person", "to": "Person", "description": "协助"},
+    "part_of": {"from": "Task", "to": "Project", "description": "属于项目"},
+    "completes": {"from": "Event", "to": "Task", "description": "完成任务"},
+    "documents": {"from": "Document", "to": "Task", "description": "记录任务"},
+    "guides": {"from": "Note", "to": "Person", "description": "指导原则"},
+    "configures": {"from": "Note", "to": "Task", "description": "配置任务"},
+    "related_to": {"from": "Event", "to": "Project", "description": "相关事件"},
+    "holds": {"from": "Person", "to": "ETF", "description": "持有 ETF"},
+    "uses_strategy": {"from": "Person", "to": "TradingStrategy", "description": "使用策略"}
+  },
+  "constraints": {
+    "Task.priority": ["high", "medium", "low"],
+    "Task.status": ["pending", "in_progress", "completed", "cancelled"],
+    "Project.status": ["active", "completed", "on_hold", "cancelled"],
+    "Event.status": ["scheduled", "in_progress", "completed", "cancelled"]
+  }
+}

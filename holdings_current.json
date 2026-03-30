@@ -1,181 +1,28 @@
 {
-  "last_updated": "2026-03-30T15:53:27.895211+08:00",
-  "source": "OCR 识别自老板持仓截图（4 张图片）- 2026-03-30 收盘后",
-  "total_market_value": 162796.5,
-  "total_profit": 664.14,
-  "yield_rate": 0.41,
-  "etf_count": 19,
+  "last_updated": "2026-03-30T22:29:39.699459",
+  "source": "测试更新",
+  "total_market_value": 17670,
+  "total_profit": -293,
+  "yield_rate": -1.66,
+  "etf_count": 2,
   "etfs": [
     {
-      "code": "512010",
-      "name": "EZ ETF",
-      "price": 0.368,
-      "change_pct": 0.0,
-      "profit": -21.83,
-      "yield": -0.82,
-      "market_value": 2810.5
-    },
-    {
-      "code": "159363",
-      "name": "创业板 AI",
-      "price": 1.078,
-      "change_pct": 0.0,
-      "profit": -172.7,
-      "yield": -1.58,
-      "market_value": 10610.0
-    },
-    {
-      "code": "159243",
-      "name": "创业智能",
-      "price": 1.126,
-      "change_pct": 0.0,
-      "profit": -321.69,
-      "yield": -4.8,
-      "market_value": 6432.0
-    },
-    {
-      "code": "159399",
-      "name": "现金流",
-      "price": 1.157,
-      "change_pct": 0.0,
-      "profit": -72.49,
-      "yield": -0.36,
-      "market_value": 20497.6
-    },
-    {
-      "code": "159241",
-      "name": "航空 ETF",
-      "price": 1.336,
-      "change_pct": 0.0,
-      "profit": -49.91,
-      "yield": -2.17,
-      "market_value": 2221.9
-    },
-    {
-      "code": "160723",
-      "name": "嘉实原油",
-      "price": 1.346,
-      "change_pct": 0.0,
-      "profit": 3729.78,
-      "yield": 0.0,
-      "market_value": 2979.9
-    },
-    {
-      "code": "159227",
-      "name": "航空航天",
-      "price": 1.425,
-      "change_pct": 0.0,
-      "profit": 81.07,
-      "yield": 1.59,
-      "market_value": 5120.0
-    },
-    {
-      "code": "159819",
-      "name": "AI 智能",
-      "price": 1.547,
-      "change_pct": 0.0,
-      "profit": -259.51,
-      "yield": -3.04,
-      "market_value": 8356.2
-    },
-    {
-      "code": "159949",
-      "name": "创业板 50",
-      "price": 1.556,
-      "change_pct": 0.0,
-      "profit": -16.15,
-      "yield": -0.77,
-      "market_value": 2161.6
+      "code": "510880",
+      "name": "红利 ETF",
+      "price": 3.284,
+      "shares": 3817,
+      "market_value": 12536,
+      "profit": 56,
+      "yield": 0.46
     },
     {
       "code": "512480",
       "name": "半导体",
       "price": 1.567,
-      "change_pct": 0.0,
-      "profit": -349.27,
-      "yield": -6.38,
-      "market_value": 5134.5
-    },
-    {
-      "code": "159206",
-      "name": "卫星 ETF",
-      "price": 1.709,
-      "change_pct": 0.0,
-      "profit": 330.27,
-      "yield": 4.93,
-      "market_value": 7047.7
-    },
-    {
-      "code": "159663",
-      "name": "机床 ETF",
-      "price": 1.765,
-      "change_pct": 0.0,
-      "profit": 431.99,
-      "yield": 8.46,
-      "market_value": 5536.0
-    },
-    {
-      "code": "513110",
-      "name": "纳指 100",
-      "price": 1.976,
-      "change_pct": 0.0,
-      "profit": -525.31,
-      "yield": -3.75,
-      "market_value": 13504.2
-    },
-    {
-      "code": "159566",
-      "name": "储能电池",
-      "price": 2.149,
-      "change_pct": 0.0,
-      "profit": 508.17,
-      "yield": 3.82,
-      "market_value": 13832.2
-    },
-    {
-      "code": "513500",
-      "name": "标普 500",
-      "price": 2.283,
-      "change_pct": 0.0,
-      "profit": -515.43,
-      "yield": -4.91,
-      "market_value": 9986.6
-    },
-    {
-      "code": "510880",
-      "name": "红利 ETF",
-      "price": 3.284,
-      "change_pct": 0.0,
-      "profit": 56.18,
-      "yield": 0.46,
-      "market_value": 12536.2
-    },
-    {
-      "code": "510300",
-      "name": "300ETF",
-      "price": 4.592,
-      "change_pct": 0.0,
-      "profit": -274.74,
-      "yield": -2.0,
-      "market_value": 13500.0
-    },
-    {
-      "code": "510500",
-      "name": "500ETF",
-      "price": 7.905,
-      "change_pct": 0.0,
-      "profit": -78.08,
-      "yield": -1.1,
-      "market_value": 7036.2
-    },
-    {
-      "code": "159937",
-      "name": "黄金 9999",
-      "price": 10.671,
-      "change_pct": 0.0,
-      "profit": -1816.21,
-      "yield": -11.86,
-      "market_value": 13493.2
+      "shares": 3276,
+      "market_value": 5134,
+      "profit": -349,
+      "yield": -6.38
     }
   ]
 }

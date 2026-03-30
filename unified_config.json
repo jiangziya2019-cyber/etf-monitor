@@ -1,0 +1,61 @@
+{
+  "system_name": "ETF-QuantaAlpha 统一投资管理系统",
+  "version": "1.0",
+  "created_at": "2026-03-28T10:45:00+08:00",
+  
+  "strategy": {
+    "name": "QuantaAlpha 多因子策略",
+    "factor_weights": {
+      "volatility": 0.40,
+      "momentum": 0.35,
+      "valuation": 0.25
+    },
+    "max_positions": 30,
+    "rebalance_period_days": 30,
+    "single_position_limit": 0.10,
+    "etf_pool_size": 608,
+    "min_liquidity": 10000000
+  },
+  
+  "risk_control": {
+    "single_stop_loss": -0.08,
+    "single_take_profit": 0.20,
+    "portfolio_stop_loss": -0.10,
+    "warning_threshold": 0.75
+  },
+  
+  "boss_instructions": {
+    "active": false,
+    "instructions": [],
+    "note": "已禁用 - 全自动策略驱动，减少人工干预"
+  },
+  
+  "data_sources": {
+    "holdings_file": "holdings_current.json",
+    "etf_cache_dir": "etf_data_cache/",
+    "backup_dir": "holdings_backup/",
+    "log_file": "unified_system.log",
+    "tushare_token": "7a534da257fa5505df132208cb1b5c3ea648a79763c9829d74dcca75",
+    "tushare_premium": true,
+    "realtime_enabled": true
+  },
+  
+  "output": {
+    "daily_report_dir": "daily_reports/",
+    "rebalancing_plan_dir": "rebalancing_plans/",
+    "feishu_push": true,
+    "feishu_target": "ou_d59d5ba9ec93dfbe3d1c143c5526721a"
+  },
+  
+  "schedule": {
+    "daily_report": "16:00",
+    "rebalance_day": "last_trading_day_of_month",
+    "market_check": ["09:30", "11:30", "15:00"],
+    "realtime_monitoring": {
+      "enabled": true,
+      "interval_seconds": 180,
+      "trading_hours": "09:30-11:30,13:00-15:00",
+      "data_types": ["rt_k", "rt_hk_k", "rt_us_k"]
+    }
+  }
+}

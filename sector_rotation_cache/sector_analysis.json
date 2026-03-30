@@ -1,0 +1,185 @@
+{
+  "timestamp": "2026-03-29T10:51:48.184098",
+  "sector_data": {
+    "科技": {
+      "name": "科技",
+      "market_value": 70694.70000000001,
+      "profit": -116.14999999999998,
+      "avg_yield": -0.21624999999999983,
+      "weight": 43.420742298536,
+      "etf_count": 8,
+      "etfs": [
+        "创业板 AI",
+        "创业智能",
+        "AI 智能",
+        "半导体",
+        "卫星 ETF",
+        "机床 ETF",
+        "纳指 100",
+        "储能电池"
+      ]
+    },
+    "医药": {
+      "name": "医药",
+      "market_value": 2810.5,
+      "profit": -21.83,
+      "avg_yield": -0.82,
+      "weight": 1.726211388265816,
+      "etf_count": 1,
+      "etfs": [
+        "医药 ETF"
+      ]
+    },
+    "周期": {
+      "name": "周期",
+      "market_value": 11413.400000000001,
+      "profit": -225.02,
+      "avg_yield": -2.3400000000000003,
+      "weight": 7.010119572614506,
+      "etf_count": 3,
+      "etfs": [
+        "光伏 ETF",
+        "航空 ETF",
+        "航空航天"
+      ]
+    },
+    "商品": {
+      "name": "商品",
+      "market_value": 17522.4,
+      "profit": 1614.2099999999998,
+      "avg_yield": 298.945,
+      "weight": 10.762272346468222,
+      "etf_count": 2,
+      "etfs": [
+        "嘉实原油",
+        "黄金 9999"
+      ]
+    },
+    "宽基": {
+      "name": "宽基",
+      "market_value": 32885.1,
+      "profit": -683.7,
+      "avg_yield": -1.6050000000000002,
+      "weight": 20.198055194541965,
+      "etf_count": 4,
+      "etfs": [
+        "创业 50",
+        "标普 500",
+        "300ETF",
+        "500ETF"
+      ]
+    },
+    "策略": {
+      "name": "策略",
+      "market_value": 27487.100000000002,
+      "profit": 39.89,
+      "avg_yield": 0.015000000000000013,
+      "weight": 16.8825991995735,
+      "etf_count": 2,
+      "etfs": [
+        "现金流",
+        "红利 ETF"
+      ]
+    }
+  },
+  "signals": [
+    {
+      "sector": "商品",
+      "score": 4,
+      "signal": "buy",
+      "name": "商品",
+      "market_value": 17522.4,
+      "profit": 1614.2099999999998,
+      "avg_yield": 298.945,
+      "weight": 10.762272346468222,
+      "etf_count": 2,
+      "etfs": [
+        "嘉实原油",
+        "黄金 9999"
+      ]
+    },
+    {
+      "sector": "策略",
+      "score": 3,
+      "signal": "buy",
+      "name": "策略",
+      "market_value": 27487.100000000002,
+      "profit": 39.89,
+      "avg_yield": 0.015000000000000013,
+      "weight": 16.8825991995735,
+      "etf_count": 2,
+      "etfs": [
+        "现金流",
+        "红利 ETF"
+      ]
+    },
+    {
+      "sector": "科技",
+      "score": 2,
+      "signal": "hold",
+      "name": "科技",
+      "market_value": 70694.70000000001,
+      "profit": -116.14999999999998,
+      "avg_yield": -0.21624999999999983,
+      "weight": 43.420742298536,
+      "etf_count": 8,
+      "etfs": [
+        "创业板 AI",
+        "创业智能",
+        "AI 智能",
+        "半导体",
+        "卫星 ETF",
+        "机床 ETF",
+        "纳指 100",
+        "储能电池"
+      ]
+    },
+    {
+      "sector": "宽基",
+      "score": 2,
+      "signal": "hold",
+      "name": "宽基",
+      "market_value": 32885.1,
+      "profit": -683.7,
+      "avg_yield": -1.6050000000000002,
+      "weight": 20.198055194541965,
+      "etf_count": 4,
+      "etfs": [
+        "创业 50",
+        "标普 500",
+        "300ETF",
+        "500ETF"
+      ]
+    },
+    {
+      "sector": "医药",
+      "score": 1,
+      "signal": "hold",
+      "name": "医药",
+      "market_value": 2810.5,
+      "profit": -21.83,
+      "avg_yield": -0.82,
+      "weight": 1.726211388265816,
+      "etf_count": 1,
+      "etfs": [
+        "医药 ETF"
+      ]
+    },
+    {
+      "sector": "周期",
+      "score": 1,
+      "signal": "hold",
+      "name": "周期",
+      "market_value": 11413.400000000001,
+      "profit": -225.02,
+      "avg_yield": -2.3400000000000003,
+      "weight": 7.010119572614506,
+      "etf_count": 3,
+      "etfs": [
+        "光伏 ETF",
+        "航空 ETF",
+        "航空航天"
+      ]
+    }
+  ]
+}

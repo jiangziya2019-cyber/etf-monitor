@@ -1,0 +1,80 @@
+{
+  "timestamp": "2026-03-28T10:22:54.098934",
+  "stage": 5,
+  "weight_optimization": [
+    {
+      "weights": [
+        0.6,
+        0.2,
+        0.2
+      ],
+      "train_arr": 5.49,
+      "test_arr": 15.74,
+      "difference": -10.25
+    },
+    {
+      "weights": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "train_arr": 7.45,
+      "test_arr": 15.74,
+      "difference": -8.29
+    },
+    {
+      "weights": [
+        0.3,
+        0.5,
+        0.2
+      ],
+      "train_arr": 8.01,
+      "test_arr": 15.23,
+      "difference": -7.220000000000001
+    },
+    {
+      "weights": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "train_arr": 6.1,
+      "test_arr": 14.48,
+      "difference": -8.38
+    },
+    {
+      "weights": [
+        0.2,
+        0.6,
+        0.2
+      ],
+      "train_arr": 0.47,
+      "test_arr": 13.91,
+      "difference": -13.44
+    }
+  ],
+  "best_test": {
+    "weights": [
+      0.6,
+      0.2,
+      0.2
+    ],
+    "train": {
+      "arr": 5.49,
+      "mdd": 28.11,
+      "sharpe": 2.38,
+      "total_return": 30.65,
+      "stop_loss_count": 25,
+      "take_profit_count": 24
+    },
+    "test": {
+      "arr": 15.74,
+      "mdd": 7.3,
+      "sharpe": 7.42,
+      "total_return": 19.7,
+      "stop_loss_count": 1,
+      "take_profit_count": 8
+    },
+    "difference": -10.25
+  }
+}

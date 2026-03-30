@@ -1,0 +1,195 @@
+{
+  "timestamp": 1774585825.093827,
+  "data": {
+    "510300": {
+      "pe_ttm": 13.79,
+      "pb_mrq": 1.45,
+      "pe_percentile": 40,
+      "pb_percentile": 30,
+      "index_code": "000300.SH",
+      "source": "index_mapping"
+    },
+    "510500": {
+      "pe_ttm": 34.64,
+      "pb_mrq": 2.39,
+      "pe_percentile": 90,
+      "pb_percentile": 60,
+      "index_code": "000905.SH",
+      "source": "index_mapping"
+    },
+    "159915": {
+      "pe_ttm": 40.19,
+      "pb_mrq": 5.45,
+      "pe_percentile": 90,
+      "pb_percentile": 80,
+      "index_code": "399006.SZ",
+      "source": "index_mapping"
+    },
+    "159243": {
+      "pe_ttm": null,
+      "pb_mrq": null,
+      "pe_percentile": null,
+      "pb_percentile": null,
+      "note": "数据获取失败",
+      "index_code": "000688.SH",
+      "source": "index_mapping"
+    },
+    "510880": {
+      "pe_ttm": null,
+      "pb_mrq": null,
+      "pe_percentile": null,
+      "pb_percentile": null,
+      "note": "数据获取失败",
+      "index_code": "000015.SH",
+      "source": "index_mapping"
+    },
+    "159363": {
+      "pe_ttm": 40.19,
+      "pb_mrq": 5.45,
+      "pe_percentile": 90,
+      "pb_percentile": 80,
+      "index_code": "399006.SZ",
+      "source": "index_mapping"
+    },
+    "512480": {
+      "pe_ttm": 34.64,
+      "pb_mrq": 2.39,
+      "pe_percentile": 90,
+      "pb_percentile": 60,
+      "index_code": "000905.SH",
+      "source": "index_mapping"
+    },
+    "512010": {
+      "pe_ttm": null,
+      "pb_mrq": null,
+      "pe_percentile": null,
+      "pb_percentile": null,
+      "note": "数据获取失败",
+      "index_code": "000933.SH",
+      "source": "index_mapping"
+    },
+    "515790": {
+      "pe_ttm": null,
+      "pb_mrq": null,
+      "pe_percentile": null,
+      "pb_percentile": null,
+      "note": "数据获取失败",
+      "index_code": "000933.SH",
+      "source": "index_mapping"
+    },
+    "159819": {
+      "pe_ttm": null,
+      "pb_mrq": null,
+      "pe_percentile": null,
+      "pb_percentile": null,
+      "note": "数据获取失败",
+      "index_code": "000688.SH",
+      "source": "index_mapping"
+    },
+    "159770": {
+      "pe_ttm": null,
+      "pb_mrq": null,
+      "pe_percentile": null,
+      "pb_percentile": null,
+      "note": "数据获取失败",
+      "index_code": "000688.SH",
+      "source": "index_mapping"
+    },
+    "159663": {
+      "pe_ttm": 34.64,
+      "pb_mrq": 2.39,
+      "pe_percentile": 90,
+      "pb_percentile": 60,
+      "index_code": "000905.SH",
+      "source": "index_mapping"
+    },
+    "159566": {
+      "pe_ttm": null,
+      "pb_mrq": null,
+      "pe_percentile": null,
+      "pb_percentile": null,
+      "note": "数据获取失败",
+      "index_code": "000933.SH",
+      "source": "index_mapping"
+    },
+    "159206": {
+      "pe_ttm": null,
+      "pb_mrq": null,
+      "pe_percentile": null,
+      "pb_percentile": null,
+      "note": "数据获取失败",
+      "index_code": "000688.SH",
+      "source": "index_mapping"
+    },
+    "159227": {
+      "pe_ttm": 13.79,
+      "pb_mrq": 1.45,
+      "pe_percentile": 40,
+      "pb_percentile": 30,
+      "index_code": "000300.SH",
+      "source": "index_mapping"
+    },
+    "159399": {
+      "pe_ttm": 13.79,
+      "pb_mrq": 1.45,
+      "pe_percentile": 40,
+      "pb_percentile": 30,
+      "index_code": "000300.SH",
+      "source": "index_mapping"
+    },
+    "518880": {
+      "pe_ttm": null,
+      "pb_mrq": null,
+      "pe_percentile": null,
+      "pb_percentile": null,
+      "note": "黄金/商品类 ETF，无 PE/PB",
+      "index_code": "GOLD",
+      "source": "index_mapping"
+    },
+    "159937": {
+      "pe_ttm": null,
+      "pb_mrq": null,
+      "pe_percentile": null,
+      "pb_percentile": null,
+      "note": "黄金/商品类 ETF，无 PE/PB",
+      "index_code": "GOLD",
+      "source": "index_mapping"
+    },
+    "160723": {
+      "pe_ttm": null,
+      "pb_mrq": null,
+      "pe_percentile": null,
+      "pb_percentile": null,
+      "note": "原油类 ETF，无 PE/PB",
+      "index_code": "OIL",
+      "source": "index_mapping"
+    },
+    "513500": {
+      "pe_ttm": 25.0,
+      "pb_mrq": 4.5,
+      "pe_percentile": 70,
+      "pb_percentile": 65,
+      "note": "标普 500（估算值）",
+      "index_code": "SP500",
+      "source": "index_mapping"
+    },
+    "513110": {
+      "pe_ttm": 32.0,
+      "pb_mrq": 8.0,
+      "pe_percentile": 75,
+      "pb_percentile": 70,
+      "note": "纳斯达克 100（估算值）",
+      "index_code": "NDX",
+      "source": "index_mapping"
+    },
+    "159241": {
+      "pe_ttm": 28.0,
+      "pb_mrq": 3.5,
+      "pe_percentile": 50,
+      "pb_percentile": 45,
+      "note": "恒生科技（估算值）",
+      "index_code": "HSTECH",
+      "source": "index_mapping"
+    }
+  }
+}

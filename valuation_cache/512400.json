@@ -1,0 +1,13 @@
+{
+  "etf_code": "512400",
+  "index_name": "\u6709\u8272\u91d1\u5c5e",
+  "pe": null,
+  "pe_percentile": 50.0,
+  "pb": null,
+  "pb_percentile": 45.0,
+  "dividend_yield": 2.2,
+  "trade_date": "20260328",
+  "update_time": "2026-03-28T13:45:56.423117",
+  "data_source": "sector_median_estimate",
+  "cache_hit": false
+}

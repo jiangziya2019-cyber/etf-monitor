@@ -1,0 +1,154 @@
+{
+  "timestamp": "2026-03-29 08:29:47",
+  "market_status": "周日休市",
+  "holdings_summary": {
+    "total_value": 162813.2,
+    "total_profit": 607.4,
+    "yield_rate": 0.37,
+    "etf_count": 20,
+    "positive_count": 5,
+    "negative_count": 15
+  },
+  "top_performers": [
+    {
+      "code": "160723",
+      "name": "嘉实原油",
+      "shares": 1600,
+      "cost": 0.374,
+      "price": 2.66,
+      "market_value": 4256.0,
+      "profit": 3657.22,
+      "yield": 611.23
+    },
+    {
+      "code": "159663",
+      "name": "机床 ETF",
+      "shares": 3200,
+      "cost": 1.595,
+      "price": 1.734,
+      "market_value": 5548.8,
+      "profit": 444.79,
+      "yield": 8.72
+    },
+    {
+      "code": "159566",
+      "name": "储能电池",
+      "shares": 6200,
+      "cost": 2.149,
+      "price": 2.258,
+      "market_value": 13999.6,
+      "profit": 675.57,
+      "yield": 5.07
+    },
+    {
+      "code": "159206",
+      "name": "卫星 ETF",
+      "shares": 4300,
+      "cost": 1.562,
+      "price": 1.592,
+      "market_value": 6845.6,
+      "profit": 128.17,
+      "yield": 1.92
+    },
+    {
+      "code": "159399",
+      "name": "现金流",
+      "shares": 18400,
+      "cost": 1.118,
+      "price": 1.121,
+      "market_value": 20626.4,
+      "profit": 56.31,
+      "yield": 0.27
+    }
+  ],
+  "bottom_performers": [
+    {
+      "code": "513500",
+      "name": "标普 500",
+      "shares": 4600,
+      "cost": 2.283,
+      "price": 2.209,
+      "market_value": 10161.4,
+      "profit": -340.63,
+      "yield": -3.24
+    },
+    {
+      "code": "159241",
+      "name": "航空 ETF",
+      "shares": 1700,
+      "cost": 1.336,
+      "price": 1.284,
+      "market_value": 2182.8,
+      "profit": -89.01,
+      "yield": -3.89
+    },
+    {
+      "code": "159243",
+      "name": "创业智能",
+      "shares": 6000,
+      "cost": 1.126,
+      "price": 1.073,
+      "market_value": 6438.0,
+      "profit": -315.69,
+      "yield": -4.71
+    },
+    {
+      "code": "512480",
+      "name": "半导体",
+      "shares": 3500,
+      "cost": 1.567,
+      "price": 1.468,
+      "market_value": 5138.0,
+      "profit": -345.77,
+      "yield": -6.32
+    },
+    {
+      "code": "159937",
+      "name": "黄金 9999",
+      "shares": 1400,
+      "cost": 10.935,
+      "price": 9.476,
+      "market_value": 13266.4,
+      "profit": -2043.01,
+      "yield": -13.34
+    }
+  ],
+  "sector_performance": {
+    "科技": {
+      "avg_yield": 0.06428571428571443,
+      "count": 7,
+      "total_value": 56970.4
+    },
+    "医药": {
+      "avg_yield": -0.82,
+      "count": 1,
+      "total_value": 2810.5
+    },
+    "周期": {
+      "avg_yield": -2.3400000000000003,
+      "count": 3,
+      "total_value": 11413.400000000001
+    },
+    "商品": {
+      "avg_yield": 298.945,
+      "count": 2,
+      "total_value": 17522.4
+    },
+    "宽基": {
+      "avg_yield": -1.7200000000000002,
+      "count": 5,
+      "total_value": 46609.399999999994
+    },
+    "策略": {
+      "avg_yield": 0.015000000000000013,
+      "count": 2,
+      "total_value": 27487.100000000002
+    }
+  },
+  "notes": [
+    "今日 A 股休市，无交易",
+    "关注今晚美股开盘表现（纳指 100、标普 500）",
+    "关注原油、黄金价格波动",
+    "周一 9:15 开始集合竞价"
+  ]
+}

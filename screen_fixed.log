@@ -1,0 +1,4 @@
+  File "/home/admin/openclaw/workspace/screen_all_etf_v5_fixed.py", line 355
+    print(f
+         ^
+SyntaxError: '(' was never closed

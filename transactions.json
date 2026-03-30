@@ -1,0 +1,58 @@
+{
+  "description": "交易记录 - 调仓操作历史",
+  "created": "2026-03-30T22:24:08.109149",
+  "records": [
+    {
+      "date": "2026-03-30",
+      "type": "调仓 Day 1",
+      "actions": [
+        {
+          "etf": "黄金 9999",
+          "action": "卖出",
+          "shares": 1011,
+          "reason": "亏损>10%，止损"
+        },
+        {
+          "etf": "嘉实原油",
+          "action": "卖出",
+          "shares": 198,
+          "reason": "减仓 30%"
+        },
+        {
+          "etf": "红利 ETF",
+          "action": "买入",
+          "shares": 1705,
+          "reason": "防守层核心，低估值"
+        }
+      ],
+      "net_cash": 11392,
+      "status": "已完成"
+    },
+    {
+      "date": "2026-03-31",
+      "type": "调仓 Day 2 (计划)",
+      "actions": [
+        {
+          "etf": "黄金 9999",
+          "action": "卖出",
+          "shares": 253,
+          "reason": "清仓剩余"
+        },
+        {
+          "etf": "半导体",
+          "action": "卖出",
+          "shares": 3276,
+          "reason": "未来层超配"
+        },
+        {
+          "etf": "红利 ETF",
+          "action": "买入",
+          "shares": 2436,
+          "reason": "加仓防守层"
+        }
+      ],
+      "net_cash": 4600,
+      "status": "待执行"
+    }
+  ]
+}

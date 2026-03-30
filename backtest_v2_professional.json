@@ -1,0 +1,116 @@
+{
+  "version": "v2.0",
+  "timestamp": "2026-03-29T12:12:37.230059",
+  "period_days": 250,
+  "transaction_costs": {
+    "stamp_tax": 0.001,
+    "commission": 0.0003,
+    "slippage": 0.001
+  },
+  "results": {
+    "fusion": {
+      "strategy": "fusion",
+      "initial_capital": 1000000,
+      "final_value": 1209082.1681644772,
+      "total_return": 20.908216816447723,
+      "annual_return": 21.092002911993713,
+      "volatility": 18.924466128880297,
+      "sharpe": 0.9560112707424715,
+      "max_drawdown": -12.217284646157315,
+      "win_rate": 55.2,
+      "n_trades": 80,
+      "total_cost": 36800.0,
+      "n_days": 250
+    },
+    "industry_only": {
+      "strategy": "industry_only",
+      "initial_capital": 1000000,
+      "final_value": 1221365.6995128314,
+      "total_return": 22.136569951283146,
+      "annual_return": 22.332115187489855,
+      "volatility": 19.484265357359206,
+      "sharpe": 0.9921911261687942,
+      "max_drawdown": -12.864351566867146,
+      "win_rate": 56.00000000000001,
+      "n_trades": 80,
+      "total_cost": 36800.0,
+      "n_days": 250
+    },
+    "wide_base_only": {
+      "strategy": "wide_base_only",
+      "initial_capital": 1000000,
+      "final_value": 1200751.934598978,
+      "total_return": 20.07519345989779,
+      "annual_return": 20.25106223358646,
+      "volatility": 18.96511407972941,
+      "sharpe": 0.9096207995935552,
+      "max_drawdown": -13.600452044914265,
+      "win_rate": 52.800000000000004,
+      "n_trades": 80,
+      "total_cost": 36800.0,
+      "n_days": 250
+    }
+  },
+  "stress_test": {
+    "normal": {
+      "strategy": "fusion",
+      "initial_capital": 1000000,
+      "final_value": 1209082.1681644772,
+      "total_return": 20.908216816447723,
+      "annual_return": 21.092002911993713,
+      "volatility": 18.924466128880297,
+      "sharpe": 0.9560112707424715,
+      "max_drawdown": -12.217284646157315,
+      "win_rate": 55.2,
+      "n_trades": 80,
+      "total_cost": 36800.0,
+      "n_days": 250,
+      "scenario": "正常市场"
+    },
+    "correction": {
+      "strategy": "fusion",
+      "initial_capital": 1000000,
+      "final_value": 1084992.304215295,
+      "total_return": 8.499230421529491,
+      "annual_return": 8.570058299401694,
+      "volatility": 18.91619772664961,
+      "sharpe": 0.29445972070562876,
+      "max_drawdown": -12.708867852138834,
+      "win_rate": 52.800000000000004,
+      "n_trades": 80,
+      "total_cost": 36800.0,
+      "n_days": 250,
+      "scenario": "回调 10%"
+    },
+    "bear": {
+      "strategy": "fusion",
+      "initial_capital": 1000000,
+      "final_value": 836812.5763169318,
+      "total_return": -16.318742368306825,
+      "annual_return": -16.43792339781891,
+      "volatility": 18.89908039097011,
+      "sharpe": -1.0285115992789924,
+      "max_drawdown": -16.756885071202472,
+      "win_rate": 48.8,
+      "n_trades": 80,
+      "total_cost": 36800.0,
+      "n_days": 250,
+      "scenario": "熊市 30%"
+    },
+    "crash": {
+      "strategy": "fusion",
+      "initial_capital": 1000000,
+      "final_value": 588632.8484185669,
+      "total_return": -41.13671515814331,
+      "annual_return": -41.385744913437385,
+      "volatility": 18.90390770959022,
+      "sharpe": -2.347966652996294,
+      "max_drawdown": -38.093939096544894,
+      "win_rate": 44.800000000000004,
+      "n_trades": 80,
+      "total_cost": 36800.0,
+      "n_days": 250,
+      "scenario": "崩盘 50%"
+    }
+  }
+}

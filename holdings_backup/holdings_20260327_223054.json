@@ -1,0 +1,210 @@
+{
+  "last_updated": "2026-03-27T22:30:00+08:00",
+  "source": "OCR 识别自老板持仓截图（4 张图片）",
+  "total_market_value": 162813.20,
+  "total_profit": 607.40,
+  "yield_rate": 0.37,
+  "etf_count": 20,
+  "etfs": [
+    {
+      "code": "512010",
+      "name": "医药 ETF",
+      "shares": 7700,
+      "cost": 0.368,
+      "price": 0.365,
+      "market_value": 2810.50,
+      "profit": -21.83,
+      "yield": -0.82
+    },
+    {
+      "code": "159363",
+      "name": "创业板 AI",
+      "shares": 10000,
+      "cost": 1.078,
+      "price": 1.061,
+      "market_value": 10610.00,
+      "profit": -172.70,
+      "yield": -1.58
+    },
+    {
+      "code": "159243",
+      "name": "创业智能",
+      "shares": 6000,
+      "cost": 1.126,
+      "price": 1.073,
+      "market_value": 6438.00,
+      "profit": -315.69,
+      "yield": -4.71
+    },
+    {
+      "code": "515790",
+      "name": "光伏 ETF",
+      "shares": 3800,
+      "cost": 1.139,
+      "price": 1.107,
+      "market_value": 4206.60,
+      "profit": -121.08,
+      "yield": -2.81
+    },
+    {
+      "code": "159399",
+      "name": "现金流",
+      "shares": 18400,
+      "cost": 1.118,
+      "price": 1.121,
+      "market_value": 20626.40,
+      "profit": 56.31,
+      "yield": 0.27
+    },
+    {
+      "code": "159241",
+      "name": "航空 ETF",
+      "shares": 1700,
+      "cost": 1.336,
+      "price": 1.284,
+      "market_value": 2182.80,
+      "profit": -89.01,
+      "yield": -3.89
+    },
+    {
+      "code": "160723",
+      "name": "嘉实原油",
+      "shares": 1600,
+      "cost": 0.374,
+      "price": 2.660,
+      "market_value": 4256.00,
+      "profit": 3657.22,
+      "yield": 611.23
+    },
+    {
+      "code": "159227",
+      "name": "航空航天",
+      "shares": 4000,
+      "cost": 1.260,
+      "price": 1.256,
+      "market_value": 5024.00,
+      "profit": -14.93,
+      "yield": -0.32
+    },
+    {
+      "code": "159819",
+      "name": "AI 智能",
+      "shares": 5700,
+      "cost": 1.512,
+      "price": 1.472,
+      "market_value": 8390.40,
+      "profit": -225.31,
+      "yield": -2.65
+    },
+    {
+      "code": "159949",
+      "name": "创业 50",
+      "shares": 1400,
+      "cost": 1.556,
+      "price": 1.555,
+      "market_value": 2177.00,
+      "profit": -0.75,
+      "yield": -0.06
+    },
+    {
+      "code": "512480",
+      "name": "半导体",
+      "shares": 3500,
+      "cost": 1.567,
+      "price": 1.468,
+      "market_value": 5138.00,
+      "profit": -345.77,
+      "yield": -6.32
+    },
+    {
+      "code": "159206",
+      "name": "卫星 ETF",
+      "shares": 4300,
+      "cost": 1.562,
+      "price": 1.592,
+      "market_value": 6845.60,
+      "profit": 128.17,
+      "yield": 1.92
+    },
+    {
+      "code": "159663",
+      "name": "机床 ETF",
+      "shares": 3200,
+      "cost": 1.595,
+      "price": 1.734,
+      "market_value": 5548.80,
+      "profit": 444.79,
+      "yield": 8.72
+    },
+    {
+      "code": "513110",
+      "name": "纳指 100",
+      "shares": 7100,
+      "cost": 1.976,
+      "price": 1.933,
+      "market_value": 13724.30,
+      "profit": -305.21,
+      "yield": -2.18
+    },
+    {
+      "code": "159566",
+      "name": "储能电池",
+      "shares": 6200,
+      "cost": 2.149,
+      "price": 2.258,
+      "market_value": 13999.60,
+      "profit": 675.57,
+      "yield": 5.07
+    },
+    {
+      "code": "513500",
+      "name": "标普 500",
+      "shares": 4600,
+      "cost": 2.283,
+      "price": 2.209,
+      "market_value": 10161.40,
+      "profit": -340.63,
+      "yield": -3.24
+    },
+    {
+      "code": "510880",
+      "name": "红利 ETF",
+      "shares": 2100,
+      "cost": 3.275,
+      "price": 3.267,
+      "market_value": 6860.70,
+      "profit": -16.42,
+      "yield": -0.24
+    },
+    {
+      "code": "510300",
+      "name": "300ETF",
+      "shares": 3000,
+      "cost": 4.592,
+      "price": 4.508,
+      "market_value": 13524.00,
+      "profit": -250.74,
+      "yield": -1.83
+    },
+    {
+      "code": "510500",
+      "name": "500ETF",
+      "shares": 900,
+      "cost": 7.905,
+      "price": 7.803,
+      "market_value": 7022.70,
+      "profit": -91.58,
+      "yield": -1.29
+    },
+    {
+      "code": "159937",
+      "name": "黄金 9999",
+      "shares": 1400,
+      "cost": 10.935,
+      "price": 9.476,
+      "market_value": 13266.40,
+      "profit": -2043.01,
+      "yield": -13.34
+    }
+  ]
+}
